@@ -1,0 +1,22 @@
+[
+  {
+    "package": "comfyui-rmbg",
+    "file": "__init__.py",
+    "sha256": "c6cc39a3da1ce75ca570930c53e4ca9bb17ec57734360244b16ee85daa85e7bc"
+  },
+  {
+    "package": "comfyui-rmbg",
+    "file": "py/AILab_LamaRemover.py",
+    "sha256": "9ada0c8eeff4a05fff3695378b9cf8698049317878e23cc890af6c07eb75dcd8"
+  },
+  {
+    "package": "tbg-sam3",
+    "file": "nodes.py",
+    "sha256": "052a2be91cc926e3bc93400e0244862bf37aedb296629526ecf95a057cc7c3f1"
+  },
+  {
+    "package": "tbg-sam3",
+    "file": "model_manager.py",
+    "sha256": "97779d7ab1ddfbb0091f8fbf31e8f8083782ed79aab6d954eb5a7f8710bc233a"
+  }
+]

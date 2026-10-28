@@ -1,0 +1,542 @@
+{
+  "comfyui-my-nodes": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "d35458f935c8215afd165bf4a6bb9ed32d8b5c672e635d732c1a171caeece6c8",
+      "packaged_sha256": "07895ebd7360cb0a4171d1211945d60da997350d23831306886f161d2fc1b177"
+    },
+    {
+      "path": "apiyi/__init__.py",
+      "installed_sha256": "173835187492e4daaad0e0c53a8bcea26e66afd92c8df10804a98402a98a6f90",
+      "packaged_sha256": "173835187492e4daaad0e0c53a8bcea26e66afd92c8df10804a98402a98a6f90"
+    },
+    {
+      "path": "apiyi/chat.py",
+      "installed_sha256": "f9c19c92eb49458fe09bb8596a5791f2893fe2f3141f3d5541a9e83b023dde93",
+      "packaged_sha256": "f9c19c92eb49458fe09bb8596a5791f2893fe2f3141f3d5541a9e83b023dde93"
+    },
+    {
+      "path": "apiyi/config.json",
+      "installed_sha256": "f24a107d47279251e01527d62c1126b3619f0563affa21a61f6c1ad4bd94b9b8",
+      "packaged_sha256": "f24a107d47279251e01527d62c1126b3619f0563affa21a61f6c1ad4bd94b9b8"
+    },
+    {
+      "path": "apiyi/fallback.py",
+      "installed_sha256": "661a2f1cd9c628b2a298345b8b044b4a83b596312a0dc276d2333da0c739b8f9",
+      "packaged_sha256": "661a2f1cd9c628b2a298345b8b044b4a83b596312a0dc276d2333da0c739b8f9"
+    },
+    {
+      "path": "apiyi/nodes.py",
+      "installed_sha256": "87038d2581c29db421029b82d9912e366697d524af36d18168873d7b7c722c76",
+      "packaged_sha256": "426324ef2f11e743c2055fd2779fc9622b1e233e94a1434ddfafe897934b572c"
+    },
+    {
+      "path": "apiyi/README.md",
+      "installed_sha256": "799e666560b9f8dd6c69e24eecb8f10b6ef7f414fb578561033cc162e184255c",
+      "packaged_sha256": "799e666560b9f8dd6c69e24eecb8f10b6ef7f414fb578561033cc162e184255c"
+    },
+    {
+      "path": "apiyi/配置密钥.ps1",
+      "installed_sha256": "bcce7f656dabe2d868ec507f733caf71ce3798964657ff35d991fa178d7eebc9",
+      "packaged_sha256": "bcce7f656dabe2d868ec507f733caf71ce3798964657ff35d991fa178d7eebc9"
+    },
+    {
+      "path": "dropdown_select/__init__.py",
+      "installed_sha256": "2f1368439d365f56cea160d311e75c0bf52357a0676494ca2642098e927daa77",
+      "packaged_sha256": "2f1368439d365f56cea160d311e75c0bf52357a0676494ca2642098e927daa77"
+    },
+    {
+      "path": "dropdown_select/nodes.py",
+      "installed_sha256": "c9bf533a3ca242f46981a36c4a8c8fe998f5e1026d7780e2e0f6676e913b8088",
+      "packaged_sha256": "c9bf533a3ca242f46981a36c4a8c8fe998f5e1026d7780e2e0f6676e913b8088"
+    },
+    {
+      "path": "dropdown_select/README.md",
+      "installed_sha256": "247466a48134925e6c948462393a58dcbc4b075e2ce7b65a765c161466313157",
+      "packaged_sha256": "247466a48134925e6c948462393a58dcbc4b075e2ce7b65a765c161466313157"
+    },
+    {
+      "path": "image25/__init__.py",
+      "installed_sha256": "cde8e9bc0878003eba332661ff55c9302dffeb85b28921ac12af83d2d1503b10",
+      "packaged_sha256": "cde8e9bc0878003eba332661ff55c9302dffeb85b28921ac12af83d2d1503b10"
+    },
+    {
+      "path": "image25/planner.py",
+      "installed_sha256": "1ce040f7ea8e4a38926343ff2ffe215576e980f32e2e08752a78ca96e65501a1",
+      "packaged_sha256": "1fd41f458411a383701b51603485c9fc203b05fb66a278c696068f26093b0157"
+    },
+    {
+      "path": "image25/README.md",
+      "installed_sha256": "d905280df1b0f5fc8abcb6caa101ce3513374a9b459acdd7b321575ca5d5235e",
+      "packaged_sha256": "d905280df1b0f5fc8abcb6caa101ce3513374a9b459acdd7b321575ca5d5235e"
+    },
+    {
+      "path": "lama_remover/__init__.py",
+      "installed_sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42",
+      "packaged_sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42"
+    },
+    {
+      "path": "lama_remover/LICENSE",
+      "installed_sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8",
+      "packaged_sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b"
+    },
+    {
+      "path": "lama_remover/locales/zh/nodeDefs.json",
+      "installed_sha256": "4f8411bb58bde3dcf6459f44eb0a07ca27d78aed153a0d9f7fbe063b0500cb13",
+      "packaged_sha256": "4f8411bb58bde3dcf6459f44eb0a07ca27d78aed153a0d9f7fbe063b0500cb13"
+    },
+    {
+      "path": "lama_remover/nodes.py",
+      "installed_sha256": "249287fbb4b55803da1552702a70a408d8553663898affdb81c5b5f4be72c662",
+      "packaged_sha256": "249287fbb4b55803da1552702a70a408d8553663898affdb81c5b5f4be72c662"
+    },
+    {
+      "path": "lama_remover/README.md",
+      "installed_sha256": "fa54c4ce3dfac95085ab2b76ee2186782cb351ef378a74ac339ff51adafb752e",
+      "packaged_sha256": "fa54c4ce3dfac95085ab2b76ee2186782cb351ef378a74ac339ff51adafb752e"
+    },
+    {
+      "path": "locales/zh/nodeDefs.json",
+      "installed_sha256": "32affb77a7f44447328f5bf007ac0c45d6c62aebe27b02c30c894619303a3ec8",
+      "packaged_sha256": "cc06fd386f8571115e4820d87ddedba8e78007e3fe4692b036de69123d30dab2"
+    },
+    {
+      "path": "mask_crop/__init__.py",
+      "installed_sha256": "d2bcf6085182f2dbb1a7f475e41dcb807470acde35a210c670b8916d51cb980f",
+      "packaged_sha256": "d2bcf6085182f2dbb1a7f475e41dcb807470acde35a210c670b8916d51cb980f"
+    },
+    {
+      "path": "mask_crop/nodes.py",
+      "installed_sha256": "ed6746d626cf5d5068051ebb2010156fb9c7538a49e45d45c62a36b7d2cbdc91",
+      "packaged_sha256": "ed6746d626cf5d5068051ebb2010156fb9c7538a49e45d45c62a36b7d2cbdc91"
+    },
+    {
+      "path": "mask_router/__init__.py",
+      "installed_sha256": "9a17d5821f26e3007ae89386aedbd1b6480173e7f9e852672b83fd18a8fcea4f",
+      "packaged_sha256": "9a17d5821f26e3007ae89386aedbd1b6480173e7f9e852672b83fd18a8fcea4f"
+    },
+    {
+      "path": "mask_router/locales/zh/nodeDefs.json",
+      "installed_sha256": "d25c01ecee6089bdffaed310714ba86a8cb73837d24baa20c8b1297132a970ce",
+      "packaged_sha256": "d25c01ecee6089bdffaed310714ba86a8cb73837d24baa20c8b1297132a970ce"
+    },
+    {
+      "path": "mask_router/nodes.py",
+      "installed_sha256": "603565e320b42ce8959e5300f57522bbf003d84cba071a59fd2fe5b084669481",
+      "packaged_sha256": "603565e320b42ce8959e5300f57522bbf003d84cba071a59fd2fe5b084669481"
+    },
+    {
+      "path": "mask_router/README.md",
+      "installed_sha256": "a6d0687787b8d588116f019ff312b913eb29b82d324a09c425bfdad216679013",
+      "packaged_sha256": "a6d0687787b8d588116f019ff312b913eb29b82d324a09c425bfdad216679013"
+    },
+    {
+      "path": "mask_seam/__init__.py",
+      "installed_sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42",
+      "packaged_sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42"
+    },
+    {
+      "path": "mask_seam/nodes.py",
+      "installed_sha256": "60314c7e793a565360b2e7ee2f49e4e686222945bf2eb2ab984be1e97a2ce3e8",
+      "packaged_sha256": "60314c7e793a565360b2e7ee2f49e4e686222945bf2eb2ab984be1e97a2ce3e8"
+    },
+    {
+      "path": "pixel_drift/__init__.py",
+      "installed_sha256": "98daef618317342b2c5396d2d156e2a20bc4ee7641a4592fd457f05fd4e3254c",
+      "packaged_sha256": "98daef618317342b2c5396d2d156e2a20bc4ee7641a4592fd457f05fd4e3254c"
+    },
+    {
+      "path": "pixel_drift/pixel_drift_fix_node.py",
+      "installed_sha256": "b77e702475949f2718edf21e728f39effcd03aba69d099e3a92f8eb45771895b",
+      "packaged_sha256": "b77e702475949f2718edf21e728f39effcd03aba69d099e3a92f8eb45771895b"
+    },
+    {
+      "path": "pixel_drift/UPSTREAM_README.md",
+      "installed_sha256": "049536d399a1b551b0413fdb0aedf02a5e1afe34922fbfb0683d1a9eef8d7f85",
+      "packaged_sha256": "1a6fbc112971af4f05b58332e5d6d44cad504a85bf0d7a70a311187cd936b0dd"
+    },
+    {
+      "path": "qwen/__init__.py",
+      "installed_sha256": "07e4b1d17432df6e28cfb1a56c01e748704f87e4fdd695484b3d21bad3f218ee",
+      "packaged_sha256": "f6b88d84940ac5c1457378fd4b0f73dcb215cc33bd1f830785845f5f3a5701d1"
+    },
+    {
+      "path": "qwen/image_nodes.py",
+      "installed_sha256": "e1eb2cb7f0caf85a7f550382b0d09400ce378fe3c266077c04e25f7cffb2c141",
+      "packaged_sha256": "fda514324ca335d046f95e34536ddec941934e078a51c62224043c6772381707"
+    },
+    {
+      "path": "qwen/nodes.py",
+      "installed_sha256": "f421fadf0b0e4360c8cc29cdcab5899d8b329a6e928344f48c04e6e013d8145c",
+      "packaged_sha256": "fef33e2e62d76f89843a44a190ac2c2d64825842a3b6cf166c7c050c7b94e640"
+    },
+    {
+      "path": "qwen/README.md",
+      "installed_sha256": "17502e29e381ad1481e89beda6d4c69c22ec187265cf108d5b8ddae06b81ec93",
+      "packaged_sha256": "76f3a37fe1ceb21b0ea91033d7b4f7cf4582fee27a083afc2709fc22f9b482d7"
+    },
+    {
+      "path": "qwen/trial_models.json",
+      "installed_sha256": "e4a1a83387d790d1129dafa2c9bc441ce85fdc97f272c26f126ab76b874fe5e7",
+      "packaged_sha256": "5fd6a0d8c61e71cf462c2a0c3b3989086dae4a06623b39b44990902572b36737"
+    },
+    {
+      "path": "qwen/配置密钥.ps1",
+      "installed_sha256": "99164f431215924754dc4b623199f6e4a0a04ca14de8fc530ea39273de164710",
+      "packaged_sha256": "99164f431215924754dc4b623199f6e4a0a04ca14de8fc530ea39273de164710"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "7018afb8260c32778236ec46e7417615a40da4c731d3d876dd5d41d281f75846",
+      "packaged_sha256": "57b7f1e2b005720baceed0cf80c01fb873c812107ef700ffc36f263ea9502878"
+    },
+    {
+      "path": "requirements.txt",
+      "installed_sha256": "4c49250e045c1e55c23b3ab0ea5e3b9bf9a7a209c8accdd3e25e9ab2ad72f1ec",
+      "packaged_sha256": "764a38f31f39b8c9de24a3899dc70d09e9d681a8a3a87fa69548e7fb8b636f4b"
+    },
+    {
+      "path": "skin_blemish/__init__.py",
+      "installed_sha256": "cebf06c8c0fd096d61ec31ae4a498671ff5f98d1cabdfd06d5d7df5d30f6a72c",
+      "packaged_sha256": "cebf06c8c0fd096d61ec31ae4a498671ff5f98d1cabdfd06d5d7df5d30f6a72c"
+    },
+    {
+      "path": "skin_blemish/hair.py",
+      "installed_sha256": "65b006821f69193b8285a6d79a893bf849dc49c37e7dea0fa778365357b04dbc",
+      "packaged_sha256": "65b006821f69193b8285a6d79a893bf849dc49c37e7dea0fa778365357b04dbc"
+    },
+    {
+      "path": "skin_blemish/nodes.py",
+      "installed_sha256": "3d2da5ce18e33b43bccfbc34020c3fb2adea7399f0e423a2c254f9aafe995b2e",
+      "packaged_sha256": "240b9e6c1780fe9cb19a45490933383de30291c277b6af4ab702322c9d715292"
+    },
+    {
+      "path": "web/auto_align.js",
+      "installed_sha256": "7e42aa2c8893d70e0ad4ec6fa33bbfb572df71cf4cde1f42b595540a7f43dd1a",
+      "packaged_sha256": "7e42aa2c8893d70e0ad4ec6fa33bbfb572df71cf4cde1f42b595540a7f43dd1a"
+    },
+    {
+      "path": "web/billing.js",
+      "installed_sha256": "c614015adb0874e6407f822fe0274f0dabe85036309282f28b9dc30426d97ef9",
+      "packaged_sha256": "b53c8a5b6b02246d6baad10e2976f56e53448f1028949233a501ad1282a43fd2"
+    },
+    {
+      "path": "web/chinese.js",
+      "installed_sha256": "f61318ac0da518e98fa78a88114a9311d53f4c14f93c59fd661fc597633932e1",
+      "packaged_sha256": "a4dd3959189756efc2e7609f9172fd608e4d955fa27d226f993b8cb445daa981"
+    },
+    {
+      "path": "web/dropdown_select.js",
+      "installed_sha256": "1cc5a4463d46a681569fc78087c8a9c67bff4728c35f8a5932ef409a8962ef21",
+      "packaged_sha256": "1cc5a4463d46a681569fc78087c8a9c67bff4728c35f8a5932ef409a8962ef21"
+    }
+  ],
+  "comfyui-aligned-resize": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "69a4b11d6e540933339690988e1e255f897b373d4ba4b5fa1ffed4f930065c61",
+      "packaged_sha256": "69a4b11d6e540933339690988e1e255f897b373d4ba4b5fa1ffed4f930065c61"
+    },
+    {
+      "path": "locales/zh/nodeDefs.json",
+      "installed_sha256": "987238f30239413efbce7a3e175e76cb12925c93fc920ad0d7d7c97f1a6bf8b9",
+      "packaged_sha256": "987238f30239413efbce7a3e175e76cb12925c93fc920ad0d7d7c97f1a6bf8b9"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "4f9a17d9407136745ab1fcef8197d9bfec974b7fd2833dcd9fa754feba1ce76e",
+      "packaged_sha256": "4f9a17d9407136745ab1fcef8197d9bfec974b7fd2833dcd9fa754feba1ce76e"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "699d9ec3a2cf4e1c145442aff8abcc125bbd49d28afc88ea2203ca048d62ce83",
+      "packaged_sha256": "699d9ec3a2cf4e1c145442aff8abcc125bbd49d28afc88ea2203ca048d62ce83"
+    }
+  ],
+  "comfyui-concurrent-images": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "fed19ffa8f386b4477c50a2c39fe9187a7d865c861a316649c8786ad69d13a6a",
+      "packaged_sha256": "fed19ffa8f386b4477c50a2c39fe9187a7d865c861a316649c8786ad69d13a6a"
+    },
+    {
+      "path": "API-并发-官方备用.json",
+      "installed_sha256": "9c2468a83f12aef136ebc9d4bede7ce0cf098649c2858c41c71975ad0d4c8c20",
+      "packaged_sha256": "9079824acf56033b1651489815f635ea0015f013b63e3d409a6a18e3dad8b48a"
+    },
+    {
+      "path": "engine.py",
+      "installed_sha256": "6c0f5d4a9f2972a612edc373dcf3106737e551885d98fe6e9033d100fc3e1ac9",
+      "packaged_sha256": "6c0f5d4a9f2972a612edc373dcf3106737e551885d98fe6e9033d100fc3e1ac9"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "9ba3ea7b66af6ce2c06d17679cf967d2d29ee03f7e1dd6759c831d4e1d0bf39b",
+      "packaged_sha256": "9ba3ea7b66af6ce2c06d17679cf967d2d29ee03f7e1dd6759c831d4e1d0bf39b"
+    },
+    {
+      "path": "official.py",
+      "installed_sha256": "162568e2eb6568220e2a6b3b47f1b79acd8bc28c1d8d7e545d9b2cdeb297d990",
+      "packaged_sha256": "162568e2eb6568220e2a6b3b47f1b79acd8bc28c1d8d7e545d9b2cdeb297d990"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "51d15de392de2fc0c475bee808608f12191bd7b91baa7a6c10cff4b01940f3e4",
+      "packaged_sha256": "51d15de392de2fc0c475bee808608f12191bd7b91baa7a6c10cff4b01940f3e4"
+    },
+    {
+      "path": "web/status.js",
+      "installed_sha256": "ce58ecc03b0399d25358f7f82633b24ea4d0e629f16cfb8f3b745fa9d07be542",
+      "packaged_sha256": "ce58ecc03b0399d25358f7f82633b24ea4d0e629f16cfb8f3b745fa9d07be542"
+    },
+    {
+      "path": "worker.py",
+      "installed_sha256": "8aba833a9777f161286c9afc7208b8543326710a92c3097ca8e6bfe5836f39a9",
+      "packaged_sha256": "8aba833a9777f161286c9afc7208b8543326710a92c3097ca8e6bfe5836f39a9"
+    }
+  ],
+  "comfyui-resolution-select": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "f16b7cec553ebc7f7706bc735e47ea78df2a28fcd3ad240abf874ddbc9a2062a",
+      "packaged_sha256": "f16b7cec553ebc7f7706bc735e47ea78df2a28fcd3ad240abf874ddbc9a2062a"
+    },
+    {
+      "path": "locales/zh/nodeDefs.json",
+      "installed_sha256": "b240c54659915a1cada258d1127b951a87f1e959736c1f8721043c5bd9d092ab",
+      "packaged_sha256": "b240c54659915a1cada258d1127b951a87f1e959736c1f8721043c5bd9d092ab"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "51053d540a531a5dccd22095ddfc2f5614fc152f342c643cf8a9c68e35da6609",
+      "packaged_sha256": "51053d540a531a5dccd22095ddfc2f5614fc152f342c643cf8a9c68e35da6609"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "ad82005201ac4c224c82ccd418a89d8f75b01cc8cca25e5907108b6a8109c105",
+      "packaged_sha256": "ad82005201ac4c224c82ccd418a89d8f75b01cc8cca25e5907108b6a8109c105"
+    }
+  ],
+  "comfyui-darkroom-reference-match": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "1d06eced96cab2d346e85a5b3ade0a3285cac96f6e6bcc108fd15e12fa15ce54",
+      "packaged_sha256": "10fce11fb97b6657c187785e7dad9c6850108b2af21596693c51937e4b9214ce"
+    },
+    {
+      "path": "core.py",
+      "installed_sha256": "da3a8abb4669fdd633ae0883d0c213c5535329973e20c5373a7ff00479a442c0",
+      "packaged_sha256": "da3a8abb4669fdd633ae0883d0c213c5535329973e20c5373a7ff00479a442c0"
+    },
+    {
+      "path": "darkroom.py",
+      "installed_sha256": "7af9fe28811f73a41fc7f3f60d117aeca212f870a5acf6c0b8d531968852ee04",
+      "packaged_sha256": "7af9fe28811f73a41fc7f3f60d117aeca212f870a5acf6c0b8d531968852ee04"
+    },
+    {
+      "path": "features.py",
+      "installed_sha256": "95e262cb5456305c706467d05edc0ba23567ba789a493705213545c57c6f36df",
+      "packaged_sha256": "95e262cb5456305c706467d05edc0ba23567ba789a493705213545c57c6f36df"
+    },
+    {
+      "path": "image_io.py",
+      "installed_sha256": "5d1827682528e064c1977b6f876998e1d0fed4698e5e9dd1d947b2d7d3f9e27e",
+      "packaged_sha256": "5d1827682528e064c1977b6f876998e1d0fed4698e5e9dd1d947b2d7d3f9e27e"
+    },
+    {
+      "path": "masks.py",
+      "installed_sha256": "ddd96f0702c49e82de569e319f0018ca7a964a2c45c4316e5042963b093d5ddc",
+      "packaged_sha256": "ddd96f0702c49e82de569e319f0018ca7a964a2c45c4316e5042963b093d5ddc"
+    },
+    {
+      "path": "quality.py",
+      "installed_sha256": "a0b4c0f5ce2fab598b305ecec9a7e4e2cde43e46d014cee58261f1f6c8e94b0c",
+      "packaged_sha256": "a0b4c0f5ce2fab598b305ecec9a7e4e2cde43e46d014cee58261f1f6c8e94b0c"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "46a3322314166c511cde484d8a00784ac2f9e90bcae1558befb4a714b1ff58f5",
+      "packaged_sha256": "2e5fbee0f623c45d4199fa5994190fa39b6483572a4d54f6857965137ec2b89d"
+    },
+    {
+      "path": "render.py",
+      "installed_sha256": "ac417df8a0847d2c86a721454b4e6afc379a795e435876ec89f3bf0818489300",
+      "packaged_sha256": "ac417df8a0847d2c86a721454b4e6afc379a795e435876ec89f3bf0818489300"
+    },
+    {
+      "path": "requirements.txt",
+      "installed_sha256": "0a94f1453a5bbe0d285c8389d5ce11562695d74c81e44bba229e840e1b413eea",
+      "packaged_sha256": "0a94f1453a5bbe0d285c8389d5ce11562695d74c81e44bba229e840e1b413eea"
+    }
+  ],
+  "ComfyUI-zveroboy-photo": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "4485fd174ecfba31d9206efc0965394c5adc02e0e4cf56ec0a2524292100e77d",
+      "packaged_sha256": "4485fd174ecfba31d9206efc0965394c5adc02e0e4cf56ec0a2524292100e77d"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "0ca65d3f0fd6e76989ccc1044fcb4d7e96e130db93402ab6e1da70bf49e7bcdc",
+      "packaged_sha256": "567d9bd9ece8086fa27b4508a1629845e38a6e33bdd975c2f999bc4354c62268"
+    },
+    {
+      "path": "photo_metadata.py",
+      "installed_sha256": "a67379b885d289335a68852553fd98c0812024c5908235ec795a768a12802075",
+      "packaged_sha256": "a67379b885d289335a68852553fd98c0812024c5908235ec795a768a12802075"
+    },
+    {
+      "path": "picker.ps1",
+      "installed_sha256": "606c690df0178965a917d8a600ebc1a3e5438985718880a67c3a0402df649a47",
+      "packaged_sha256": "6ce9dded015691238947ff44540014ec710524483b243b0c26b3aca96fe18c61"
+    },
+    {
+      "path": "picker.py",
+      "installed_sha256": "3846c754c3448dea0d09576d519fbf66bab16667840c468cc72159762695325b",
+      "packaged_sha256": "3846c754c3448dea0d09576d519fbf66bab16667840c468cc72159762695325b"
+    },
+    {
+      "path": "presets.py",
+      "installed_sha256": "dc0b06a952ae5a333524b336d068b2e479426f1f8a32b30c1829e0e756c1c258",
+      "packaged_sha256": "f2251022b06294548cb87ed97e7bcc51025f30d3b6c4d2342817684056a627a2"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "396b403dac33cb10687c87e28a5956161f3eda8cec92f4e2c0f4a494a3530120",
+      "packaged_sha256": "ec8014121ae5f44fa1a145b2e5318bff8c9a0145d1cd392ac00e57d1275a3ff8"
+    },
+    {
+      "path": "requirements.txt",
+      "installed_sha256": "37e9bed37143eebf44989acf573cde34f792605364e1f41e022d3f1cdc2e6a7b",
+      "packaged_sha256": "5d489475aa03a48cce0535ce374d6bb58c141bbbc99d9dc79093b09474dfb587"
+    },
+    {
+      "path": "translation/categories.json",
+      "installed_sha256": "c8389dda847e01629f3da68e4555c0997ce70fca18a77adf3170fc8b06853098",
+      "packaged_sha256": "c8389dda847e01629f3da68e4555c0997ce70fca18a77adf3170fc8b06853098"
+    },
+    {
+      "path": "translation/ComfyUI-zveroboy-photo.json",
+      "installed_sha256": "a2c0abd6198f8c61fe57a6cd920d8e5b2bd72d9c4010a80850e3499688cb273d",
+      "packaged_sha256": "6ef0ddf1de23bae67649baed88dda71419dd460ad33c78a90ad71acc69411a1f"
+    },
+    {
+      "path": "translation/menu.json",
+      "installed_sha256": "34f63d17a1c55ebe618965533a6df8f10486e9ce2a4374dbcd7634b0235ad1c0",
+      "packaged_sha256": "34f63d17a1c55ebe618965533a6df8f10486e9ce2a4374dbcd7634b0235ad1c0"
+    },
+    {
+      "path": "web/photo_loader.js",
+      "installed_sha256": "dcde08da665ca0d0456a4d24b981d6f2e9a56444c2db164915b4e37aff68801a",
+      "packaged_sha256": "dcde08da665ca0d0456a4d24b981d6f2e9a56444c2db164915b4e37aff68801a"
+    }
+  ],
+  "ComfyUI_PadToMultiple_CN": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "f52137b0ef20a1da03c407b69982738716107da06dc7c3df5f4af92891ca4e9a",
+      "packaged_sha256": "f52137b0ef20a1da03c407b69982738716107da06dc7c3df5f4af92891ca4e9a"
+    },
+    {
+      "path": "README_安装说明.txt",
+      "installed_sha256": "2dec37a7304c1f50c220b16bd444e963c2b237bd2e742dafbbd5de6645462c32",
+      "packaged_sha256": "2dec37a7304c1f50c220b16bd444e963c2b237bd2e742dafbbd5de6645462c32"
+    }
+  ],
+  "archive/comfyui-apiyi-gpt": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "fc3585deac66c998a58f9118ba250ee974f6c5a6ea3c949d7fa95d5d7c740ac9",
+      "packaged_sha256": "fc3585deac66c998a58f9118ba250ee974f6c5a6ea3c949d7fa95d5d7c740ac9"
+    },
+    {
+      "path": "API易GPT-重试3次-官方备用.json",
+      "installed_sha256": "14a8883a4ddd91750e2c7cd27b925bf2fd984124711057a4c5917a71df64ef94",
+      "packaged_sha256": "36cc52c8b20877542f23064b64cdd9024551a92d2e8e5f1a3c0e2d75df57ff73"
+    },
+    {
+      "path": "config.json",
+      "installed_sha256": "f24a107d47279251e01527d62c1126b3619f0563affa21a61f6c1ad4bd94b9b8",
+      "packaged_sha256": "f24a107d47279251e01527d62c1126b3619f0563affa21a61f6c1ad4bd94b9b8"
+    },
+    {
+      "path": "example_workflow.json",
+      "installed_sha256": "1a879ee5df3e3379634861c336846e69c61edd547a1f2b95e1d3e17880553aed",
+      "packaged_sha256": "a2b3c13ed869d4729ec4e0ef5621ed5c5da3e909f23e39662b887d0c6be6587b"
+    },
+    {
+      "path": "fallback.py",
+      "installed_sha256": "661a2f1cd9c628b2a298345b8b044b4a83b596312a0dc276d2333da0c739b8f9",
+      "packaged_sha256": "661a2f1cd9c628b2a298345b8b044b4a83b596312a0dc276d2333da0c739b8f9"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "eaed6c4c8e06410970505ff215ca893c867f6ad93b88f8e4f468609785594034",
+      "packaged_sha256": "eaed6c4c8e06410970505ff215ca893c867f6ad93b88f8e4f468609785594034"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "fe0275b62ef54336b2b720907a10e842344f371a454b09d3265292f2da5b3345",
+      "packaged_sha256": "fe0275b62ef54336b2b720907a10e842344f371a454b09d3265292f2da5b3345"
+    },
+    {
+      "path": "web/billing.js",
+      "installed_sha256": "b53c8a5b6b02246d6baad10e2976f56e53448f1028949233a501ad1282a43fd2",
+      "packaged_sha256": "b53c8a5b6b02246d6baad10e2976f56e53448f1028949233a501ad1282a43fd2"
+    },
+    {
+      "path": "配置密钥.ps1",
+      "installed_sha256": "bcce7f656dabe2d868ec507f733caf71ce3798964657ff35d991fa178d7eebc9",
+      "packaged_sha256": "bcce7f656dabe2d868ec507f733caf71ce3798964657ff35d991fa178d7eebc9"
+    }
+  ],
+  "archive/comfyui-qwen-api": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "07e4b1d17432df6e28cfb1a56c01e748704f87e4fdd695484b3d21bad3f218ee",
+      "packaged_sha256": "f6b88d84940ac5c1457378fd4b0f73dcb215cc33bd1f830785845f5f3a5701d1"
+    },
+    {
+      "path": "image_nodes.py",
+      "installed_sha256": "6d506ecaec596237851c0cca1bbd971dc7dab261072081eaff8238a4c204a300",
+      "packaged_sha256": "45bfff7a6ca3494557a60ff6d674b8d8d9b0258b4e1945eae72ab3d4f6343bad"
+    },
+    {
+      "path": "nodes.py",
+      "installed_sha256": "fe97df20fa1ca4125e0c25b67c63af11747454a1e5ad79038d0554122039d4e1",
+      "packaged_sha256": "f64f28ae1786f8b90373dea2df0d8d96cfd0b22f34c5315bb041e43ee2454c21"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "17502e29e381ad1481e89beda6d4c69c22ec187265cf108d5b8ddae06b81ec93",
+      "packaged_sha256": "76f3a37fe1ceb21b0ea91033d7b4f7cf4582fee27a083afc2709fc22f9b482d7"
+    },
+    {
+      "path": "trial_models.json",
+      "installed_sha256": "e4a1a83387d790d1129dafa2c9bc441ce85fdc97f272c26f126ab76b874fe5e7",
+      "packaged_sha256": "5fd6a0d8c61e71cf462c2a0c3b3989086dae4a06623b39b44990902572b36737"
+    },
+    {
+      "path": "配置密钥.ps1",
+      "installed_sha256": "99164f431215924754dc4b623199f6e4a0a04ca14de8fc530ea39273de164710",
+      "packaged_sha256": "99164f431215924754dc4b623199f6e4a0a04ca14de8fc530ea39273de164710"
+    }
+  ],
+  "archive/image25-tile": [
+    {
+      "path": "__init__.py",
+      "installed_sha256": "cde8e9bc0878003eba332661ff55c9302dffeb85b28921ac12af83d2d1503b10",
+      "packaged_sha256": "cde8e9bc0878003eba332661ff55c9302dffeb85b28921ac12af83d2d1503b10"
+    },
+    {
+      "path": "planner.py",
+      "installed_sha256": "461a9543819e01c095037092d758c4bb2e572b8b44e4583c32881b4edcb81ab8",
+      "packaged_sha256": "461a9543819e01c095037092d758c4bb2e572b8b44e4583c32881b4edcb81ab8"
+    },
+    {
+      "path": "README.md",
+      "installed_sha256": "d905280df1b0f5fc8abcb6caa101ce3513374a9b459acdd7b321575ca5d5235e",
+      "packaged_sha256": "d905280df1b0f5fc8abcb6caa101ce3513374a9b459acdd7b321575ca5d5235e"
+    }
+  ]
+}

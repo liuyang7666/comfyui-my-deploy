@@ -1,0 +1,157 @@
+{
+  "PhotoAddNoise": {
+    "title": "照片添加随机噪点",
+    "description": "给图像添加随机噪点，蓝色通道的噪点略弱。强度越大，颗粒越明显；本节点默认0.05已经较明显，可从0.01附近试起。它只改变像素，不生成相机EXIF信息，也不能保证任何检测结果。",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "noise_level": "噪点强度（越大越明显）"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "image": "图像"
+    }
+  },
+  "PhotoAddGrain": {
+    "title": "照片添加胶片颗粒",
+    "description": "叠加黑白颗粒，模拟胶片质感，保留原图色彩。颗粒强度控制可见程度；颗粒大小越大，颗粒块越粗。按8位RGB处理，输出不携带透明通道。",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "grain_strength": "颗粒强度",
+      "grain_size": "颗粒大小（越大越粗）"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "image": "图像"
+    }
+  },
+  "PhotoAddExif": {
+    "title": "照片生成EXIF相机信息",
+    "description": "按所选相机预设和填写内容生成EXIF信息，图像像素保持不变。将图像和EXIF信息分别连接到本插件的保存节点，保存时才会写入文件；普通图像连接本身不携带这段EXIF。相机预设只填写品牌、机型、镜头等信息，不会调色或模拟镜头效果。快门输入125表示1/125秒；白平衡0=自动、1=手动，均只记录信息。序列号留空会随机生成；拍摄时间留空使用当前时间，填写格式为YYYY-MM-DD HH:MM:SS。",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "preset": "相机信息预设（不调色）",
+      "artist": "作者／摄影师",
+      "software": "处理软件（留空用预设）",
+      "copyright": "版权说明",
+      "body_serial": "机身序列号（留空随机）",
+      "lens_serial": "镜头序列号（留空随机）",
+      "focal_length_mm": "焦距（毫米）",
+      "fnumber": "光圈值（4表示f/4）",
+      "exposure_1_over_s": "快门分母（125表示1/125秒）",
+      "iso": "ISO感光度（信息记录）",
+      "exposure_bias_ev": "曝光补偿（EV，仅记录）",
+      "white_balance": "白平衡标记（0自动／1手动）",
+      "datetime_original": "拍摄时间（留空用当前时间）"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "EXIF_DATA": "EXIF相机信息"
+    }
+  },
+  "PhotoLoadRaw": {
+    "title": "读取照片／文件夹（图像列表）",
+    "description": "点击按钮选择照片（可多选）或文件夹，按自然顺序逐张输出，支持异尺寸图像及分批读取。EXIF相机信息为供保存节点使用的编码数据；EXIF中文摘要是可读文字，可接文本预览。运行后本节点也会显示中文摘要。RAW使用本地ExifTool提取真实拍摄信息，不会改写原文件；无EXIF时明确说明。输出为8位RGB，显示方向已校正，保存EXIF同步为正向以避免重复旋转。",
+    "inputs": {},
+    "widgets": {
+      "raw_file": "照片／文件夹路径（可点按钮选择）",
+      "include_subfolders": "包含子文件夹",
+      "start_index": "起始序号（从0开始）",
+      "max_images": "最多读取张数（0为全部）",
+      "Choose photos": "选择照片…",
+      "Choose folder": "选择文件夹…",
+      "exif_preview": "EXIF信息预览"
+    },
+    "outputs": {
+      "IMAGE": "图像列表",
+      "EXIF_DATA": "EXIF相机信息（供保存）",
+      "EXIF_TEXT": "EXIF中文摘要（可预览）"
+    }
+  },
+  "PhotoSaveJpg": {
+    "title": "保存JPEG照片（可写EXIF）",
+    "description": "将图像保存到ComfyUI输出目录，并写入连接的EXIF信息；不需要EXIF时可留空。质量越高压缩损失越小，但JPEG始终是有损格式。文件名自动追加时间和批次编号。EXIF需单独连接，不能从图像线路自动恢复。",
+    "inputs": {
+      "images": "图像",
+      "exif_data": "EXIF相机信息（可留空）"
+    },
+    "widgets": {
+      "exif_data": "EXIF相机信息（可留空）",
+      "filename_prefix": "文件名前缀",
+      "quality": "JPEG质量（越高损失越小）"
+    },
+    "outputs": {}
+  },
+  "PhotoSaveRaw": {
+    "title": "保存TIFF／DNG（8位RGB）",
+    "description": "把当前图像以8位RGB保存到ComfyUI输出目录，可单独连接EXIF信息。TIFF不再进行JPEG有损压缩，但无法恢复之前已经损失的细节或位深。DNG选项将当前RGB像素封装并写入预设色彩矩阵，不是相机原始RAW；不保证所有RAW软件都兼容。相机预设只在DNG模式填写标记与矩阵，不是画面调色。",
+    "inputs": {
+      "images": "图像",
+      "exif_data": "EXIF相机信息（可留空）"
+    },
+    "widgets": {
+      "exif_data": "EXIF相机信息（可留空）",
+      "filename_prefix": "文件名前缀",
+      "format": "保存格式",
+      "preset": "DNG相机标记与矩阵预设"
+    },
+    "outputs": {}
+  },
+  "PhotoAdvancedNoise": {
+    "title": "模拟相机传感器噪点",
+    "description": "组合随亮度变化的噪点和固定读出噪点，再经过一次JPEG压缩。通道差异开关会让RGB通道采用不同噪点强度，并非真正的拜耳阵列解码。可额外叠加胶片颗粒；关闭颗粒层后，其强度和大小参数不起作用。JPEG质量越低压缩痕迹越明显，即使噪点设为0仍会进行JPEG压缩。",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "noise_strength": "传感器噪点强度",
+      "color_correlation": "模拟RGB通道噪点差异",
+      "Simulate Bayer Pattern": "模拟RGB通道噪点差异",
+      "add_grain_layer": "叠加胶片颗粒",
+      "Add Film Grain Layer": "叠加胶片颗粒",
+      "grain_strength": "额外颗粒强度",
+      "grain_size": "额外颗粒大小（越大越粗）",
+      "jpeg_compression": "JPEG质量（越低压缩越重）"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "image": "图像"
+    }
+  },
+  "Realism7NoiseExif": {
+    "title": "照片质感综合处理（噪点／双重JPEG）",
+    "description": "依次执行可选的随机亮度、饱和度、对比度变化，添加噪点，再进行两次JPEG压缩。首次质量决定第一遍压缩损失；最终质量提高不能恢复首次压缩已损失的细节。相机及拍摄参数只用于内部JPEG的EXIF，不改变对应的画面光圈、曝光或白平衡。注意：本节点最终只输出RGB图像，内部EXIF在转回图像张量时丢失；需要文件中保留EXIF，请另接“照片生成EXIF相机信息”和本插件保存节点。",
+    "inputs": {
+      "images": "图像"
+    },
+    "widgets": {
+      "preset": "内部EXIF相机预设（不调色）",
+      "noise_level": "噪点强度",
+      "jpeg_quality_first": "首次JPEG质量",
+      "jpeg_quality_final": "最终JPEG质量",
+      "random_color_jitter": "随机微调亮度／饱和度／对比度",
+      "jitter_strength": "随机微调幅度",
+      "artist": "作者／摄影师",
+      "software": "处理软件（留空用预设）",
+      "copyright": "版权说明",
+      "body_serial": "机身序列号（留空随机）",
+      "lens_serial": "镜头序列号（留空随机）",
+      "focal_length_mm": "焦距（毫米，仅记录）",
+      "fnumber": "光圈值（仅记录）",
+      "exposure_1_over_s": "快门分母（125表示1/125秒）",
+      "iso": "ISO感光度（仅记录）",
+      "exposure_bias_ev": "曝光补偿（EV，仅记录）",
+      "white_balance": "白平衡标记（0自动／1手动）",
+      "datetime_original": "拍摄时间（留空用当前时间）"
+    },
+    "outputs": {
+      "IMAGE": "图像",
+      "image": "图像"
+    }
+  }
+}

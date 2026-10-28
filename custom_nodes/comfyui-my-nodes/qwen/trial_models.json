@@ -1,0 +1,30 @@
+{
+  "qwen3.8-flash": {
+    "family": "千问 Flash",
+    "quota": "100 万 Token",
+    "thinking_only": false,
+    "hybrid": true,
+    "vision": true
+  },
+  "deepseek-v4.1-flash": {
+    "family": "DeepSeek",
+    "quota": "100 万 Token",
+    "thinking_only": false,
+    "hybrid": true,
+    "vision": true
+  },
+  "qwen3.7-plus": {
+    "family": "千问 Plus",
+    "quota": "100 万 Token",
+    "thinking_only": false,
+    "hybrid": true,
+    "vision": true
+  },
+  "qwen3.8-max": {
+    "family": "千问 Max",
+    "quota": "100 万 Token",
+    "thinking_only": false,
+    "hybrid": true,
+    "vision": true
+  }
+}

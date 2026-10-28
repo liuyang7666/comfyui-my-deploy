@@ -1,0 +1,238 @@
+{
+  "PixelDriftFix": {
+    "display_name": "自动对齐",
+    "description": "按画面特征自动校正整体位移、旋转、缩放和透视；大图缩小副本匹配，原尺寸输出。匹配失败原样返回编辑图并警告。内部按8位处理。",
+    "inputs": {
+      "source_image": {
+        "name": "原图（对齐基准）"
+      },
+      "edited_image": {
+        "name": "编辑后图像"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "对齐后图像"
+      }
+    }
+  },
+  "Image25TilePlan": {
+    "display_name": "Image 2.5 · 4K 自动分块规划",
+    "inputs": {
+      "image": {
+        "name": "图像"
+      },
+      "max_long_edge": {
+        "name": "分块长边上限"
+      },
+      "overlap": {
+        "name": "重叠比例偏好"
+      }
+    }
+  },
+  "QwenAPI": {
+    "display_name": "千问 API · 对话 / 图片理解",
+    "inputs": {
+      "model": {
+        "name": "模型"
+      },
+      "prompt": {
+        "name": "提示词"
+      },
+      "images": {
+        "name": "参考图像"
+      }
+    }
+  },
+  "QwenImageAPI": {
+    "inputs": {
+      "seed": {
+        "name": "种子"
+      }
+    }
+  },
+  "MYImageCropByMaskMultiple": {
+    "display_name": "遮罩裁剪（倍数）",
+    "description": "保留原图像、裁剪图像、XYWH边界框和裁剪尺寸输出；裁剪尺寸按指定倍数向上对齐。",
+    "inputs": {
+      "original_images": {
+        "name": "图像"
+      },
+      "masks": {
+        "name": "遮罩"
+      },
+      "crop_size_mult": {
+        "name": "裁剪系数"
+      },
+      "bbox_smooth_alpha": {
+        "name": "BBox平滑透明度"
+      },
+      "multiple": {
+        "name": "倍数",
+        "tooltip": "裁剪输出的宽和高都向上取整为此整数倍。"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "原图像"
+      },
+      "1": {
+        "name": "裁剪图像"
+      },
+      "2": {
+        "name": "边界框"
+      },
+      "3": {
+        "name": "宽度"
+      },
+      "4": {
+        "name": "高度"
+      }
+    }
+  },
+  "MYMaskSeam": {
+    "display_name": "移除遮罩接缝",
+    "description": "由输入遮罩或XYWH边界框生成接缝遮罩，适合连接到 Lama 等修复节点。",
+    "inputs": {
+      "image": {
+        "name": "图像"
+      },
+      "seam_width": {
+        "name": "接缝宽度",
+        "tooltip": "接缝遮罩总宽度（像素）。偶数宽度在原遮罩内外各分一半；例如6像素为内缩3、外扩3。"
+      },
+      "mask": {
+        "name": "遮罩"
+      },
+      "bboxes": {
+        "name": "边界框",
+        "tooltip": "XYWH格式，可连接遮罩裁剪节点的边界框输出。"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "接缝遮罩"
+      }
+    }
+  },
+  "MYLamaRemover": {
+    "display_name": "移除路人（LaMa，遮罩驱动）",
+    "description": "使用 LaMa 根据输入遮罩修补图像；白色区域移除，黑色区域保留。节点不自动识别人。",
+    "inputs": {
+      "images": {
+        "name": "图像"
+      },
+      "masks": {
+        "name": "遮罩"
+      },
+      "removal_strength": {
+        "name": "去除强度"
+      },
+      "edge_smoothness": {
+        "name": "边缘平滑"
+      },
+      "unload_model": {
+        "name": "释放模型显存"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "图像批次"
+      }
+    }
+  },
+  "MYMaskWidthRouter": {
+    "display_name": "遮罩分流（宽度）",
+    "description": "按独立区域最粗处的局部宽度整块分流。超过阈值输出大遮罩，其余输出小遮罩；细长电线不按面积判断。保留原灰度、软边和批次位置。",
+    "inputs": {
+      "mask": {
+        "name": "遮罩",
+        "tooltip": "接入单张遮罩、MASK批次或同尺寸遮罩列表。每张内的独立连通区域分别判断。"
+      },
+      "pixel_threshold": {
+        "name": "像素阈值",
+        "tooltip": "原遮罩分辨率下的最粗处宽度。大于阈值进入大遮罩；小于或等于阈值进入小遮罩。"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "大遮罩"
+      },
+      "1": {
+        "name": "小遮罩"
+      }
+    }
+  },
+  "MYSkinBlemish": {
+    "display_name": "皮肤瑕疵去除 / 减淡",
+    "description": "根据当前图像的肤色范围寻找暗斑、痦子、红点、粉刺和白头，局部修补或减淡，不检测人脸。",
+    "inputs": {
+      "image": {
+        "name": "原图"
+      },
+      "sensitivity": {
+        "name": "检测灵敏度"
+      },
+      "max_spot_size": {
+        "name": "最大瑕疵尺寸（像素）"
+      },
+      "skin_range": {
+        "name": "肤色范围"
+      },
+      "strength": {
+        "name": "修复强度"
+      },
+      "dark_amount": {
+        "name": "暗斑／黑头／痦子"
+      },
+      "red_amount": {
+        "name": "红点／红痘"
+      },
+      "bright_amount": {
+        "name": "白头／亮点"
+      },
+      "mask": {
+        "name": "处理范围蒙版"
+      },
+      "protect_mask": {
+        "name": "保护蒙版"
+      },
+      "protect_hair": {
+        "name": "自动保护头发",
+        "tooltip": "自动分割头发，排除瑕疵检测并保留原像素；不检测人脸。"
+      },
+      "ignore_smallest_percent": {
+        "tooltip": "按面积排序，最小的10%候选区域不处理；按区域数量向上取整。0关闭。",
+        "name": "忽略最小区域比例（%）"
+      },
+      "min_spot_size": {
+        "name": "最小瑕疵直径（像素）",
+        "tooltip": "在检测阶段排除细小纹理，默认5像素。提高可减少毛孔误检，也可能漏掉小痘点。"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "修复图像"
+      },
+      "1": {
+        "name": "瑕疵蒙版"
+      },
+      "2": {
+        "name": "皮肤蒙版"
+      }
+    }
+  },
+  "MYDropdownSelect": {
+    "display_name": "下拉选择",
+    "inputs": {
+      "selected": {
+        "name": "标题"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "文本"
+      }
+    }
+  }
+}

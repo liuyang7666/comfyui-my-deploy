@@ -1,0 +1,14 @@
+[
+  {
+    "id": "comfyui-crystools",
+    "version": "1.27.4",
+    "source": "工作流内嵌元数据；本机未注册",
+    "node_type": "Switch any [Crystools]"
+  },
+  {
+    "id": "kj863257/ComfyUI_RC_Image_Compositor",
+    "version": "b9be8ef90121ad0f20cf7d9b8d7878a60a5cb989",
+    "source": "工作流内嵌元数据；本机未注册",
+    "node_type": "RC_PreviewImageNoMetadata"
+  }
+]

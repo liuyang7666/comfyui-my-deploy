@@ -1,0 +1,28 @@
+{
+  "MYLamaRemover": {
+    "display_name": "移除路人（LaMa，遮罩驱动）",
+    "description": "使用 LaMa 根据输入遮罩修补图像；白色区域移除，黑色区域保留。节点不自动识别人。",
+    "inputs": {
+      "images": {
+        "name": "图像"
+      },
+      "masks": {
+        "name": "遮罩"
+      },
+      "removal_strength": {
+        "name": "去除强度"
+      },
+      "edge_smoothness": {
+        "name": "边缘平滑"
+      },
+      "unload_model": {
+        "name": "释放模型显存"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "图像批次"
+      }
+    }
+  }
+}

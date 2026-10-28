@@ -1,0 +1,17 @@
+{
+  "PixelAlignedResize": {
+    "display_name": "对齐缩放（长边·16/32）",
+    "inputs": {
+      "image": {"name": "图像"},
+      "long_edge": {"name": "目标长边"},
+      "short_multiple": {"name": "短边倍数"}
+    }
+  },
+  "PixelAlignedRestore": {
+    "display_name": "对齐还原（编辑后）",
+    "inputs": {
+      "image": {"name": "编辑后图像"},
+      "alignment": {"name": "对齐信息"}
+    }
+  }
+}

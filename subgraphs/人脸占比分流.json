@@ -1,0 +1,687 @@
+{
+  "revision": 0,
+  "last_node_id": "86",
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 86,
+      "type": "de0675c6-a85d-46b5-9cad-30c386467247",
+      "pos": [
+        -259.5417336980396,
+        -678.1092452402366
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "boolean",
+          "name": "boolean",
+          "type": "BOOLEAN",
+          "links": []
+        }
+      ],
+      "properties": {
+        "previewExposures": []
+      },
+      "title": "人脸占比分流"
+    }
+  ],
+  "links": [],
+  "version": 0.4,
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "de0675c6-a85d-46b5-9cad-30c386467247",
+        "version": 1,
+        "state": {
+          "lastGroupId": 3,
+          "lastNodeId": 222,
+          "lastLinkId": 338,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "人脸占比分流",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -1338.063081321936,
+            -507.84105718120765,
+            128,
+            68
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            653.5733456840295,
+            -488.03366697562035,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "559ab59b-9392-4064-802f-6ce364c100e7",
+            "name": "mask",
+            "type": "MASK",
+            "linkIds": [
+              337
+            ],
+            "localized_name": "mask",
+            "pos": [
+              -1234.063081321936,
+              -483.84105718120765
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "81ed1876-dd28-4b17-875b-af21a40c8d73",
+            "name": "boolean",
+            "type": "BOOLEAN",
+            "linkIds": [
+              129
+            ],
+            "localized_name": "boolean",
+            "pos": [
+              677.5733456840295,
+              -464.03366697562035
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 80,
+            "type": "WASMaskStatistics",
+            "pos": [
+              -944.0932161520836,
+              -667.244130539997
+            ],
+            "size": [
+              270,
+              330
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "蒙版",
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "link": 338
+              },
+              {
+                "label": "覆盖判定阈值",
+                "localized_name": "threshold",
+                "name": "threshold",
+                "type": "FLOAT,NUMBER,INT",
+                "widget": {
+                  "name": "threshold"
+                },
+                "link": null
+              },
+              {
+                "label": "统计范围",
+                "localized_name": "scope",
+                "name": "scope",
+                "type": "COMBO",
+                "widget": {
+                  "name": "scope"
+                },
+                "link": null
+              },
+              {
+                "label": "单张蒙版索引",
+                "localized_name": "index",
+                "name": "index",
+                "type": "INT,NUMBER,FLOAT",
+                "widget": {
+                  "name": "index"
+                },
+                "link": null
+              },
+              {
+                "label": "索引越界处理",
+                "localized_name": "out_of_range",
+                "name": "out_of_range",
+                "type": "COMBO",
+                "widget": {
+                  "name": "out_of_range"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "覆盖比例",
+                "localized_name": "coverage",
+                "name": "coverage",
+                "type": "FLOAT",
+                "links": [
+                  125
+                ]
+              },
+              {
+                "label": "覆盖像素数",
+                "localized_name": "covered_pixels",
+                "name": "covered_pixels",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "总像素数",
+                "localized_name": "total_pixels",
+                "name": "total_pixels",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "最小值",
+                "localized_name": "min",
+                "name": "min",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "最大值",
+                "localized_name": "max",
+                "name": "max",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "平均值",
+                "localized_name": "mean",
+                "name": "mean",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "是否为空",
+                "localized_name": "is_empty",
+                "name": "is_empty",
+                "type": "BOOLEAN",
+                "links": null
+              },
+              {
+                "label": "蒙版数量",
+                "localized_name": "batch_size",
+                "name": "batch_size",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "宽度",
+                "localized_name": "width",
+                "name": "width",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "高度",
+                "localized_name": "height",
+                "name": "height",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "统计摘要",
+                "localized_name": "summary",
+                "name": "summary",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "WASMaskStatistics"
+            },
+            "widgets_values": [
+              0.5,
+              "whole batch",
+              0,
+              "error"
+            ],
+            "widgets_values_named": {
+              "threshold": 0.5,
+              "scope": "whole batch",
+              "index": 0,
+              "out_of_range": "error"
+            }
+          },
+          {
+            "id": 81,
+            "type": "ImpactConvertDataType",
+            "pos": [
+              -637.0476497785423,
+              -671.1890072387895
+            ],
+            "size": [
+              140,
+              86
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "值",
+                "localized_name": "value",
+                "name": "value",
+                "type": "*",
+                "link": 125
+              }
+            ],
+            "outputs": [
+              {
+                "label": "字符串",
+                "localized_name": "字符串",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  126
+                ]
+              },
+              {
+                "label": "浮点",
+                "localized_name": "浮点",
+                "name": "FLOAT",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "整数",
+                "localized_name": "整数",
+                "name": "INT",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "布尔",
+                "localized_name": "布尔",
+                "name": "BOOLEAN",
+                "type": "BOOLEAN",
+                "links": null
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "ImpactConvertDataType"
+            }
+          },
+          {
+            "id": 82,
+            "type": "StringListToString",
+            "pos": [
+              -628.8872368531286,
+              -474.79899629128545
+            ],
+            "size": [
+              225,
+              96.16692357666187
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "字符串列表",
+                "localized_name": "string_list",
+                "name": "string_list",
+                "type": "STRING",
+                "link": 126
+              },
+              {
+                "label": "加入",
+                "localized_name": "join_with",
+                "name": "join_with",
+                "type": "STRING",
+                "widget": {
+                  "name": "join_with"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "字符串",
+                "localized_name": "字符串",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  127
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "StringListToString"
+            },
+            "widgets_values": [
+              ","
+            ],
+            "widgets_values_named": {
+              "join_with": ","
+            }
+          },
+          {
+            "id": 83,
+            "type": "WASNumberListStatistics",
+            "pos": [
+              -277.7509607508979,
+              -646.4070625515503
+            ],
+            "size": [
+              400,
+              276
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "数值列表",
+                "localized_name": "values",
+                "name": "values",
+                "type": "STRING,ARRAY,NUMBER,FLOAT,INT",
+                "widget": {
+                  "name": "values"
+                },
+                "link": 127
+              },
+              {
+                "label": "无法解析项的处理",
+                "localized_name": "unreadable",
+                "name": "unreadable",
+                "type": "COMBO",
+                "widget": {
+                  "name": "unreadable"
+                },
+                "link": null
+              },
+              {
+                "label": "保留小数位数",
+                "localized_name": "decimals",
+                "name": "decimals",
+                "type": "INT",
+                "widget": {
+                  "name": "decimals"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "总和",
+                "localized_name": "sum",
+                "name": "sum",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "平均值",
+                "localized_name": "mean",
+                "name": "mean",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "最小值",
+                "localized_name": "min",
+                "name": "min",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "最大值",
+                "localized_name": "max",
+                "name": "max",
+                "type": "FLOAT",
+                "links": [
+                  128
+                ]
+              },
+              {
+                "label": "中位数",
+                "localized_name": "median",
+                "name": "median",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "极差",
+                "localized_name": "range",
+                "name": "range",
+                "type": "FLOAT",
+                "links": null
+              },
+              {
+                "label": "数值数量",
+                "localized_name": "count",
+                "name": "count",
+                "type": "INT",
+                "links": null
+              },
+              {
+                "label": "统计摘要",
+                "localized_name": "summary",
+                "name": "summary",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "WASNumberListStatistics"
+            },
+            "widgets_values": [
+              "",
+              "skip",
+              4
+            ],
+            "widgets_values_named": {
+              "values": "",
+              "unreadable": "skip",
+              "decimals": 4
+            }
+          },
+          {
+            "id": 84,
+            "type": "WASLogicCompareNumbers",
+            "pos": [
+              236.67334568402953,
+              -630.212048008008
+            ],
+            "size": [
+              270,
+              126
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "数值 A",
+                "localized_name": "number_a",
+                "name": "number_a",
+                "type": "FLOAT,INT,NUMBER",
+                "widget": {
+                  "name": "number_a"
+                },
+                "link": 128
+              },
+              {
+                "label": "数值 B",
+                "localized_name": "number_b",
+                "name": "number_b",
+                "type": "FLOAT,INT,NUMBER",
+                "widget": {
+                  "name": "number_b"
+                },
+                "link": null
+              },
+              {
+                "label": "比较方式",
+                "localized_name": "comparison",
+                "name": "comparison",
+                "type": "COMBO",
+                "widget": {
+                  "name": "comparison"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "比较结果",
+                "localized_name": "boolean",
+                "name": "boolean",
+                "type": "BOOLEAN",
+                "links": [
+                  129
+                ]
+              },
+              {
+                "label": "比较说明",
+                "localized_name": "comparison_text",
+                "name": "comparison_text",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "WASLogicCompareNumbers"
+            },
+            "widgets_values": [
+              0,
+              0.12,
+              "a < b"
+            ],
+            "widgets_values_named": {
+              "number_a": 0,
+              "number_b": 0.12,
+              "comparison": "a < b"
+            }
+          },
+          {
+            "id": 222,
+            "type": "MasksToMaskList",
+            "pos": [
+              -1194.8285272880996,
+              -491.9773955947106
+            ],
+            "size": [
+              140,
+              26
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "遮罩",
+                "localized_name": "masks",
+                "name": "masks",
+                "shape": 7,
+                "type": "MASK",
+                "link": 337
+              }
+            ],
+            "outputs": [
+              {
+                "label": "遮罩",
+                "localized_name": "遮罩",
+                "name": "MASK",
+                "shape": 6,
+                "type": "MASK",
+                "links": [
+                  338
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "MasksToMaskList"
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 125,
+            "origin_id": 80,
+            "origin_slot": 0,
+            "target_id": 81,
+            "target_slot": 0,
+            "type": "FLOAT"
+          },
+          {
+            "id": 126,
+            "origin_id": 81,
+            "origin_slot": 0,
+            "target_id": 82,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 127,
+            "origin_id": 82,
+            "origin_slot": 0,
+            "target_id": 83,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 128,
+            "origin_id": 83,
+            "origin_slot": 3,
+            "target_id": 84,
+            "target_slot": 0,
+            "type": "FLOAT"
+          },
+          {
+            "id": 129,
+            "origin_id": 84,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "BOOLEAN"
+          },
+          {
+            "id": 337,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 222,
+            "target_slot": 0,
+            "type": "MASK"
+          },
+          {
+            "id": 338,
+            "origin_id": 222,
+            "origin_slot": 0,
+            "target_id": 80,
+            "target_slot": 0,
+            "type": "MASK"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "extra": {}
+}

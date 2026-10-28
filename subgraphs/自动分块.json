@@ -1,0 +1,535 @@
+{
+  "revision": 2,
+  "last_node_id": "242",
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 242,
+      "type": "e0dd7336-295c-4db4-9cde-a5702fa161bd",
+      "pos": [
+        -4630,
+        -1980
+      ],
+      "size": [
+        380,
+        300
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "b",
+          "type": "INT",
+          "link": null,
+          "widget": {
+            "name": "b"
+          },
+          "label": "最长边上限"
+        },
+        {
+          "name": "overlap",
+          "type": "FLOAT",
+          "link": null,
+          "widget": {
+            "name": "overlap"
+          },
+          "label": "重叠偏好（自动2%–4%）"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [],
+          "label": "列数"
+        },
+        {
+          "name": "int_1",
+          "type": "INT",
+          "links": [],
+          "label": "行数"
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [],
+          "label": "数量"
+        },
+        {
+          "name": "右补齐",
+          "type": "INT",
+          "links": [],
+          "label": "右补齐"
+        },
+        {
+          "name": "下补齐",
+          "type": "INT",
+          "links": [],
+          "label": "下补齐"
+        },
+        {
+          "name": "重叠X",
+          "type": "INT",
+          "links": [],
+          "label": "重叠X"
+        },
+        {
+          "name": "重叠Y",
+          "type": "INT",
+          "links": [],
+          "label": "重叠Y"
+        },
+        {
+          "name": "块宽",
+          "type": "INT",
+          "links": [],
+          "label": "块宽"
+        },
+        {
+          "name": "块高",
+          "type": "INT",
+          "links": [],
+          "label": "块高"
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.39.1",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        3840,
+        0.03
+      ],
+      "widgets_values_named": {
+        "b": 3840,
+        "overlap": 0.03
+      },
+      "title": "自动分块"
+    }
+  ],
+  "links": [],
+  "version": 0.4,
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "e0dd7336-295c-4db4-9cde-a5702fa161bd",
+        "version": 1,
+        "state": {
+          "lastGroupId": 1,
+          "lastNodeId": 247,
+          "lastLinkId": 12,
+          "lastRerouteId": 0
+        },
+        "revision": 2,
+        "config": {},
+        "name": "自动分块",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            252,
+            352,
+            128,
+            108
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            1710,
+            350,
+            132,
+            228
+          ]
+        },
+        "inputs": [
+          {
+            "id": "7d3a6375-274e-4cc7-80c3-f84c8dfb6504",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              10
+            ],
+            "localized_name": "图像",
+            "label": "图像",
+            "pos": [
+              356,
+              376
+            ]
+          },
+          {
+            "id": "a4b31b76-c033-45c5-ae79-6dbeaaccd1fb",
+            "name": "b",
+            "type": "INT",
+            "linkIds": [
+              11
+            ],
+            "label": "最长边上限",
+            "pos": [
+              356,
+              396
+            ]
+          },
+          {
+            "id": "d14aae57-5c62-5682-bba3-deabc81fb171",
+            "name": "overlap",
+            "type": "FLOAT",
+            "label": "重叠偏好（自动2%–4%）",
+            "pos": [
+              356,
+              416
+            ],
+            "linkIds": [
+              12
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "2df43345-de5c-4238-9210-f4c79ebeee73",
+            "name": "int",
+            "type": "INT",
+            "linkIds": [
+              1
+            ],
+            "label": "列数",
+            "pos": [
+              1734,
+              374
+            ]
+          },
+          {
+            "id": "1bc01e9e-b5fc-48f2-bc6e-3b23cf5a1563",
+            "name": "int_1",
+            "type": "INT",
+            "linkIds": [
+              2
+            ],
+            "label": "行数",
+            "pos": [
+              1734,
+              394
+            ]
+          },
+          {
+            "id": "8dc05f8d-2e33-406a-a46b-9c0c2358765b",
+            "name": "INT",
+            "type": "INT",
+            "linkIds": [
+              3
+            ],
+            "label": "数量",
+            "pos": [
+              1734,
+              414
+            ]
+          },
+          {
+            "id": "2d691cf7-77bc-52f9-b0b2-931705444ede",
+            "name": "右补齐",
+            "type": "INT",
+            "label": "右补齐",
+            "pos": [
+              1734,
+              434
+            ],
+            "linkIds": [
+              4
+            ]
+          },
+          {
+            "id": "9aac7870-8c38-556c-9086-2c6d76fe0654",
+            "name": "下补齐",
+            "type": "INT",
+            "label": "下补齐",
+            "pos": [
+              1734,
+              454
+            ],
+            "linkIds": [
+              5
+            ]
+          },
+          {
+            "id": "c67fd9ca-cd06-5121-b32d-fc53872e6687",
+            "name": "重叠X",
+            "type": "INT",
+            "label": "重叠X",
+            "pos": [
+              1734,
+              474
+            ],
+            "linkIds": [
+              6
+            ]
+          },
+          {
+            "id": "e2c4cd1e-fbbc-5ab0-ae10-c27658d3af32",
+            "name": "重叠Y",
+            "type": "INT",
+            "label": "重叠Y",
+            "pos": [
+              1734,
+              494
+            ],
+            "linkIds": [
+              7
+            ]
+          },
+          {
+            "id": "8157418e-6f48-51a8-b8f7-0d0ce223c7a4",
+            "name": "块宽",
+            "type": "INT",
+            "label": "块宽",
+            "pos": [
+              1734,
+              514
+            ],
+            "linkIds": [
+              8
+            ]
+          },
+          {
+            "id": "4a54022c-f9c8-5f9b-b3d4-ced94e15dcd3",
+            "name": "块高",
+            "type": "INT",
+            "label": "块高",
+            "pos": [
+              1734,
+              534
+            ],
+            "linkIds": [
+              9
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 247,
+            "type": "Image25TilePlan",
+            "pos": [
+              450,
+              300
+            ],
+            "size": [
+              360,
+              160
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "image",
+                "type": "IMAGE",
+                "link": 10
+              },
+              {
+                "name": "max_long_edge",
+                "type": "INT",
+                "link": 11,
+                "widget": {
+                  "name": "max_long_edge"
+                }
+              },
+              {
+                "name": "overlap",
+                "type": "FLOAT",
+                "link": 12,
+                "widget": {
+                  "name": "overlap"
+                },
+                "label": "重叠偏好（自动2%–4%）"
+              }
+            ],
+            "outputs": [
+              {
+                "name": "列数",
+                "type": "INT",
+                "links": [
+                  1
+                ]
+              },
+              {
+                "name": "行数",
+                "type": "INT",
+                "links": [
+                  2
+                ]
+              },
+              {
+                "name": "数量",
+                "type": "INT",
+                "links": [
+                  3
+                ]
+              },
+              {
+                "name": "右补齐",
+                "type": "INT",
+                "links": [
+                  4
+                ]
+              },
+              {
+                "name": "下补齐",
+                "type": "INT",
+                "links": [
+                  5
+                ]
+              },
+              {
+                "name": "重叠X",
+                "type": "INT",
+                "links": [
+                  6
+                ]
+              },
+              {
+                "name": "重叠Y",
+                "type": "INT",
+                "links": [
+                  7
+                ]
+              },
+              {
+                "name": "块宽",
+                "type": "INT",
+                "links": [
+                  8
+                ]
+              },
+              {
+                "name": "块高",
+                "type": "INT",
+                "links": [
+                  9
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "Image25TilePlan"
+            },
+            "widgets_values_named": {
+              "max_long_edge": 3840,
+              "overlap": 0.03
+            },
+            "widgets_values": [
+              3840,
+              0.03
+            ],
+            "title": "最少块数 / 含重叠16倍数 / 自动2%–4%"
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 1,
+            "origin_id": 247,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "INT"
+          },
+          {
+            "id": 2,
+            "origin_id": 247,
+            "origin_slot": 1,
+            "target_id": -20,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 3,
+            "origin_id": 247,
+            "origin_slot": 2,
+            "target_id": -20,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 4,
+            "origin_id": 247,
+            "origin_slot": 3,
+            "target_id": -20,
+            "target_slot": 3,
+            "type": "INT"
+          },
+          {
+            "id": 5,
+            "origin_id": 247,
+            "origin_slot": 4,
+            "target_id": -20,
+            "target_slot": 4,
+            "type": "INT"
+          },
+          {
+            "id": 6,
+            "origin_id": 247,
+            "origin_slot": 5,
+            "target_id": -20,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 7,
+            "origin_id": 247,
+            "origin_slot": 6,
+            "target_id": -20,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 8,
+            "origin_id": 247,
+            "origin_slot": 7,
+            "target_id": -20,
+            "target_slot": 7,
+            "type": "INT"
+          },
+          {
+            "id": 9,
+            "origin_id": 247,
+            "origin_slot": 8,
+            "target_id": -20,
+            "target_slot": 8,
+            "type": "INT"
+          },
+          {
+            "id": 10,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 247,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 11,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 247,
+            "target_slot": 1,
+            "type": "INT"
+          },
+          {
+            "id": 12,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 247,
+            "target_slot": 2,
+            "type": "FLOAT"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "extra": {}
+}

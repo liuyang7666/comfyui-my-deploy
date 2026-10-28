@@ -1,0 +1,13 @@
+# 先安装适合目标机器的 ComfyUI / PyTorch 环境。
+# 不在此文件中重装 torch、torchvision 或覆盖 CUDA 版本。
+numpy
+Pillow
+requests
+huggingface-hub>=0.19.0
+opencv-python
+scipy
+tifffile
+piexif
+pillow-heif
+rawpy
+transformers

@@ -1,0 +1,199 @@
+[
+  {
+    "id": "comfyui-custom-scripts",
+    "type": "cnr",
+    "dirName": "comfyui-custom-scripts",
+    "version": "1.2.5",
+    "enabled": true,
+    "source_url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-darkroom",
+    "type": "cnr",
+    "dirName": "comfyui-darkroom",
+    "version": "1.31.0",
+    "enabled": true,
+    "source_url": "https://github.com/jeremieLouvaert/ComfyUI-Darkroom",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-dlss5-enhancer-v15",
+    "type": "cnr",
+    "dirName": "comfyui-dlss5-enhancer-v15",
+    "version": "1.0.1",
+    "enabled": true,
+    "source_url": "https://github.com/Strix-3D/ComfyUI-DLSS5-Enhancer-v15",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-easy-use",
+    "type": "cnr",
+    "dirName": "comfyui-easy-use",
+    "version": "1.4.1",
+    "enabled": true,
+    "source_url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "ComfyUI-Global-Translation",
+    "type": "cnr",
+    "dirName": "ComfyUI-Global-Translation",
+    "version": "3.1.1",
+    "enabled": true,
+    "source_url": "https://github.com/a63976659/ComfyUI-Global-Translation",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-impact-pack",
+    "type": "cnr",
+    "dirName": "comfyui-impact-pack",
+    "version": "8.28.3",
+    "enabled": true,
+    "source_url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-impact-subpack",
+    "type": "cnr",
+    "dirName": "comfyui-impact-subpack",
+    "version": "1.3.5",
+    "enabled": true,
+    "source_url": "https://github.com/ltdrdata/ComfyUI-Impact-Subpack",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-inpaint-cropandstitch",
+    "type": "cnr",
+    "dirName": "comfyui-inpaint-cropandstitch",
+    "version": "3.0.20",
+    "enabled": true,
+    "source_url": "https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "ComfyUI-JH-PixelPro",
+    "type": "git",
+    "dirName": "ComfyUI-JH-PixelPro",
+    "commit": "b66d55957089b053d16984dfeaee30c31a0e16b8",
+    "url": "https://github.com/jetthuangai/ComfyUI-JH-PixelPro.git",
+    "enabled": true,
+    "source_url": "https://github.com/jetthuangai/ComfyUI-JH-PixelPro.git",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-kjnodes",
+    "type": "cnr",
+    "dirName": "comfyui-kjnodes",
+    "version": "1.5.2",
+    "enabled": true,
+    "source_url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "Comfyui-Qwen-Image-2.1-BlockCache-T8",
+    "type": "git",
+    "dirName": "Comfyui-Qwen-Image-2.1-BlockCache-T8",
+    "enabled": true,
+    "source_url": "https://github.com/T8mars/Comfyui-Qwen-Image-2.1-BlockCache-T8",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-reactor",
+    "type": "cnr",
+    "dirName": "comfyui-reactor",
+    "version": "0.7.1-b3",
+    "enabled": true,
+    "source_url": "https://github.com/Gourieff/ComfyUI-ReActor",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-rmbg",
+    "type": "cnr",
+    "dirName": "comfyui-rmbg",
+    "version": "3.2.0",
+    "enabled": true,
+    "source_url": "https://github.com/1038lab/ComfyUI-RMBG",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui-videomark",
+    "type": "cnr",
+    "dirName": "comfyui-videomark",
+    "version": "1.4.3",
+    "enabled": true,
+    "source_url": "https://github.com/kaerozhi/comfyui-videomark",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui_controlnet_aux",
+    "type": "cnr",
+    "dirName": "comfyui_controlnet_aux",
+    "version": "1.1.6",
+    "enabled": true,
+    "source_url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui_essentials",
+    "type": "cnr",
+    "dirName": "comfyui_essentials",
+    "version": "1.1.0",
+    "enabled": true,
+    "source_url": "https://github.com/cubiq/ComfyUI_essentials",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "comfyui_layerstyle",
+    "type": "cnr",
+    "dirName": "comfyui_layerstyle",
+    "version": "2.0.42",
+    "enabled": true,
+    "source_url": "https://github.com/chflame163/ComfyUI_LayerStyle",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "deno-custom-nodes",
+    "type": "cnr",
+    "dirName": "deno-custom-nodes",
+    "version": "0.7.120",
+    "enabled": true,
+    "source_url": "https://github.com/Deno2026/comfyui-deno-custom-nodes",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "Goohaitools-comfyui",
+    "type": "git",
+    "dirName": "Goohaitools-comfyui",
+    "enabled": true,
+    "source_url": null,
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "rgthree-comfy",
+    "type": "cnr",
+    "dirName": "rgthree-comfy",
+    "version": "1.0.2610050029",
+    "enabled": true,
+    "source_url": "https://github.com/rgthree/rgthree-comfy",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "tbg-sam3",
+    "type": "cnr",
+    "dirName": "tbg-sam3",
+    "version": "1.1.1",
+    "enabled": true,
+    "source_url": "https://github.com/Ltamann/ComfyUI-TBG-SAM3",
+    "local_modifications_preserved": false
+  },
+  {
+    "id": "was-node-suite-comfyui",
+    "type": "cnr",
+    "dirName": "was-node-suite-comfyui",
+    "version": "3.4.2",
+    "enabled": true,
+    "source_url": "https://github.com/WASasquatch/was-node-suite-comfyui",
+    "local_modifications_preserved": false
+  }
+]

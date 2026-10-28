@@ -1,0 +1,820 @@
+[
+  {
+    "path": "workflows/archive/Darkroom_全局后分区参考匹配.json",
+    "source_sha256": "8641f134261083bc3c19677a4d353bfd65f23e791af7d095406babc159c9eb13",
+    "sanitized": [],
+    "node_dependencies": {
+      "DarkroomPrecisionLoadImage": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 高精度读图"
+      },
+      "DarkroomSemanticReferenceMatch": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 自动风格匹配"
+      },
+      "DarkroomSaveImage16": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 无损16位保存"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/archive/Darkroom_参考风格匹配_v0.4.0.json",
+    "source_sha256": "b2162791ffabee379784adc8ffe1c36d6dfd8b80a8024d6a11be846345f2cd99",
+    "sanitized": [],
+    "node_dependencies": {
+      "DarkroomPrecisionLoadImage": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 高精度读图"
+      },
+      "DarkroomSemanticReferenceMatch": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 自动风格匹配"
+      },
+      "DarkroomSaveImage16": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 无损16位保存"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/archive/Darkroom_参考风格匹配_强度0-100.json",
+    "source_sha256": "66a8b29a7e209e1d172543dedcc13cbb1c5e5fcbd47ab0831b3799d8db7f7350",
+    "sanitized": [],
+    "node_dependencies": {
+      "DarkroomPrecisionLoadImage": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 高精度读图"
+      },
+      "DarkroomSemanticReferenceMatch": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 自动风格匹配"
+      },
+      "DarkroomSaveImage16": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 无损16位保存"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/saved/加载保存（原文件名）.json",
+    "source_sha256": "35295b1f3e64f6e62e1b0c4dad9f8b23b25da68732d53fba37e68a36ae4b775d",
+    "sanitized": [],
+    "node_dependencies": {
+      "Image Load": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Image Load"
+      },
+      "Text Concatenate": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Text Concatenate"
+      },
+      "Image Save": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Image Save"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/saved/垃圾检测与SAM3去除_修复版.json",
+    "source_sha256": "42cc6f1079b357a41990b4ae234825acb29e0ad9413d60b953ab98d7a7815be4",
+    "sanitized": [],
+    "node_dependencies": {
+      "LoadImage": {
+        "module": "nodes",
+        "display_name": "Load Image"
+      },
+      "BboxDetectorSEGS": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "BBOX Detector (SEGS)"
+      },
+      "UltralyticsDetectorProvider": {
+        "module": "custom_nodes.comfyui-impact-subpack",
+        "display_name": "UltralyticsDetectorProvider"
+      },
+      "ImpactSEGSToMaskList": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "SEGS to Mask List"
+      },
+      "PreviewAny": {
+        "module": "comfy_extras.nodes_preview_any",
+        "display_name": "Preview as Text"
+      },
+      "MaskPreview": {
+        "module": "comfy_extras.nodes_mask",
+        "display_name": "Preview Mask"
+      },
+      "SAM3Segment": {
+        "module": "custom_nodes.comfyui-rmbg",
+        "display_name": "SAM3 Segmentation (RMBG)"
+      },
+      "PreviewImage": {
+        "module": "nodes",
+        "display_name": "Preview Image"
+      },
+      "AILab_LamaRemover": {
+        "module": "custom_nodes.comfyui-rmbg",
+        "display_name": "Lama Remover (RMBG)"
+      },
+      "WASMaskStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Mask Statistics"
+      },
+      "ImpactConvertDataType": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "ImpactConvertDataType"
+      },
+      "StringListToString": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "String List to String"
+      },
+      "WASNumberListStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Number List Statistics"
+      },
+      "WASLogicCompareNumbers": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Logic Compare Numbers"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [
+      "bbox/垃圾检测.pt"
+    ],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/人体占比分流.json",
+    "source_sha256": "f451f81e2b42569dbb2f57682857954dc9d0f14d810ff1ff2ccb6326cc78d7c8",
+    "sanitized": [],
+    "node_dependencies": {
+      "WASMaskStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Mask Statistics"
+      },
+      "ImpactConvertDataType": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "ImpactConvertDataType"
+      },
+      "StringListToString": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "String List to String"
+      },
+      "WASNumberListStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Number List Statistics"
+      },
+      "WASLogicCompareNumbers": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Logic Compare Numbers"
+      },
+      "PreviewAny": {
+        "module": "comfy_extras.nodes_preview_any",
+        "display_name": "Preview as Text"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/人脸占比分流.json",
+    "source_sha256": "21d0ad7d9f051ab4b910717fbfb41a9018ec9b607032d7d8f3f2062d2c49b30a",
+    "sanitized": [],
+    "node_dependencies": {
+      "WASMaskStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Mask Statistics"
+      },
+      "ImpactConvertDataType": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "ImpactConvertDataType"
+      },
+      "StringListToString": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "String List to String"
+      },
+      "WASNumberListStatistics": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Number List Statistics"
+      },
+      "WASLogicCompareNumbers": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Logic Compare Numbers"
+      },
+      "MasksToMaskList": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "Mask Batch to Mask List"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/千问文生图.json",
+    "source_sha256": "d1a60a5eb4c5edbac61eacd8910e9d4d6b04a8862d5219b06eb82d8387240c2b",
+    "sanitized": [],
+    "node_dependencies": {
+      "UNETLoader": {
+        "module": "nodes",
+        "display_name": "Load Diffusion Model"
+      },
+      "CLIPLoader": {
+        "module": "nodes",
+        "display_name": "Load CLIP"
+      },
+      "TextEncodeQwenImage21": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Text Encode Qwen Image 2.1"
+      },
+      "VAELoader": {
+        "module": "nodes",
+        "display_name": "Load VAE"
+      },
+      "KSampler": {
+        "module": "nodes",
+        "display_name": "KSampler"
+      },
+      "QwenImage21Cache": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Qwen Image 2.1 Cache"
+      },
+      "VAEDecode": {
+        "module": "nodes",
+        "display_name": "VAE Decode"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image_2.1_vae_bf16.safetensors",
+      "千问\\qwen_image_2.1_bf16.safetensors"
+    ],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/放大图像 (SeedVR2 3B Int8).json",
+    "source_sha256": "183c28423fc9b4ae5113d531763099b764140d08085131c119d5dd1940993321",
+    "sanitized": [],
+    "node_dependencies": {
+      "VAEEncodeTiled": {
+        "module": "nodes",
+        "display_name": "VAE Encode (Tiled)"
+      },
+      "JoinImageWithAlpha": {
+        "module": "comfy_extras.nodes_compositing",
+        "display_name": "Join Image with Alpha"
+      },
+      "VAELoader": {
+        "module": "nodes",
+        "display_name": "Load VAE"
+      },
+      "UNETLoader": {
+        "module": "nodes",
+        "display_name": "Load Diffusion Model"
+      },
+      "KSampler": {
+        "module": "nodes",
+        "display_name": "KSampler"
+      },
+      "VAEDecodeTiled": {
+        "module": "nodes",
+        "display_name": "VAE Decode (Tiled)"
+      },
+      "ResizeImageMaskNode": {
+        "module": "comfy_extras.nodes_post_processing",
+        "display_name": "Resize Image/Mask"
+      },
+      "SeedVR2Preprocess": {
+        "module": "comfy_extras.nodes_seedvr",
+        "display_name": "Pre-Process SeedVR2 Input"
+      },
+      "SeedVR2PostProcessing": {
+        "module": "comfy_extras.nodes_seedvr",
+        "display_name": "Post-Process SeedVR2 Output"
+      },
+      "SeedVR2Conditioning": {
+        "module": "comfy_extras.nodes_seedvr",
+        "display_name": "Apply SeedVR2 Conditioning"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [
+      "seedvr2_3b_int8_convrot.safetensors",
+      "seedvr2_ema_vae_fp16.safetensors"
+    ],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/移除物体.json",
+    "source_sha256": "d7dbad47375bbfe4e5a73e7dcca40f246a494fdbccc67e1e18caf0e3836d5694",
+    "sanitized": [],
+    "node_dependencies": {
+      "GetImageSize": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image Size"
+      },
+      "SAM3Segment": {
+        "module": "custom_nodes.comfyui-rmbg",
+        "display_name": "SAM3 Segmentation (RMBG)"
+      },
+      "ImageScaleToTotalPixels": {
+        "module": "comfy_extras.nodes_post_processing",
+        "display_name": "Scale Image to Total Pixels"
+      },
+      "LayerMask: MaskGrow": {
+        "module": "custom_nodes.comfyui_layerstyle",
+        "display_name": "LayerMask: MaskGrow"
+      },
+      "MaskToImage": {
+        "module": "comfy_extras.nodes_mask",
+        "display_name": "Convert Mask to Image"
+      },
+      "ImageScale": {
+        "module": "nodes",
+        "display_name": "Upscale Image"
+      },
+      "ImageAndMaskPreview": {
+        "module": "custom_nodes.comfyui-kjnodes",
+        "display_name": "ImageAndMaskPreview"
+      },
+      "ImageToMask": {
+        "module": "comfy_extras.nodes_mask",
+        "display_name": "Convert Image to Mask"
+      },
+      "MYImageCropByMaskMultiple": {
+        "module": "custom_nodes.comfyui-my-nodes",
+        "display_name": "遮罩裁剪（倍数）"
+      },
+      "easy imageUncropFromBBOX": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "imageUncropFromBBOX"
+      },
+      "MYMaskSeam": {
+        "module": "custom_nodes.comfyui-my-nodes",
+        "display_name": "移除遮罩接缝"
+      },
+      "AILab_LamaRemover": {
+        "module": "custom_nodes.comfyui-rmbg",
+        "display_name": "Lama Remover (RMBG)"
+      },
+      "UNETLoader": {
+        "module": "nodes",
+        "display_name": "Load Diffusion Model"
+      },
+      "CLIPLoader": {
+        "module": "nodes",
+        "display_name": "Load CLIP"
+      },
+      "TextEncodeQwenImage21": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Text Encode Qwen Image 2.1"
+      },
+      "VAELoader": {
+        "module": "nodes",
+        "display_name": "Load VAE"
+      },
+      "KSampler": {
+        "module": "nodes",
+        "display_name": "KSampler"
+      },
+      "QwenImage21Cache": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Qwen Image 2.1 Cache"
+      },
+      "VAEDecode": {
+        "module": "nodes",
+        "display_name": "VAE Decode"
+      },
+      "LoraLoaderModelOnly": {
+        "module": "nodes",
+        "display_name": "Load LoRA"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image_2.1_vae_bf16.safetensors",
+      "千问2.1\\Qwen-Image-2.1-Fun-Acc-4Step.safetensors",
+      "千问2.1\\Qwen2.1 一致性无偏移_GH_V1.0.safetensors",
+      "千问\\qwen_image_2.1_bf16.safetensors"
+    ],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/转移色彩.json",
+    "source_sha256": "eddafbe797d3a3f959e74e012445984552680a9b3cbc7d97e2d78f02864cb360",
+    "sanitized": [],
+    "node_dependencies": {
+      "孤海图像缩放按像素": {
+        "module": "custom_nodes.Goohaitools-comfyui",
+        "display_name": "孤海图像缩放按像素"
+      },
+      "GetImageSize": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image Size"
+      },
+      "PixelDriftFix": {
+        "module": "custom_nodes.comfyui-my-nodes",
+        "display_name": "自动对齐"
+      },
+      "LayerUtility: ImageBlendAdvance": {
+        "module": "custom_nodes.comfyui_layerstyle",
+        "display_name": "LayerUtility: ImageBlendAdvance"
+      },
+      "easy imageDetailTransfer": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "Image Detail Transfer"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/examples/Darkroom_蒙版内颜色范围匹配.json",
+    "source_sha256": "18814b5330e1b742b59494ffdd13ece4e3a2c0f6c0e38d5e8af7c0e6c8195cdd",
+    "sanitized": [],
+    "node_dependencies": {
+      "DarkroomPrecisionLoadImage": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 高精度读图"
+      },
+      "DarkroomSemanticReferenceMatch": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 自动风格匹配"
+      },
+      "DarkroomSaveImage16": {
+        "module": "custom_nodes.comfyui-darkroom-reference-match",
+        "display_name": "Darkroom 无损16位保存"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/examples/API-并发-官方备用.json",
+    "source_sha256": "9c2468a83f12aef136ebc9d4bede7ce0cf098649c2858c41c71975ad0d4c8c20",
+    "sanitized": [],
+    "node_dependencies": {
+      "LoadImage": {
+        "module": "nodes",
+        "display_name": "Load Image"
+      },
+      "ImageUntile+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Untile"
+      },
+      "SaveImage": {
+        "module": "nodes",
+        "display_name": "Save Image"
+      },
+      "ConcurrentImageSubmit": {
+        "module": "custom_nodes.comfyui-concurrent-images",
+        "display_name": "分块并发提交"
+      },
+      "ConcurrentImageCollect": {
+        "module": "custom_nodes.comfyui-concurrent-images",
+        "display_name": "分块并发取回（按序）"
+      },
+      "GetImageSize": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image Size"
+      },
+      "ImageCrop": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Crop Image (DEPRECATED)"
+      },
+      "Image25TilePlan": {
+        "module": "custom_nodes.image25-tile",
+        "display_name": "Image 2.5 · 4K 自动分块规划"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "workflows/examples/API易GPT-重试3次-官方备用.json",
+    "source_sha256": "14a8883a4ddd91750e2c7cd27b925bf2fd984124711057a4c5917a71df64ef94",
+    "sanitized": [],
+    "node_dependencies": {
+      "APIYiGPTFallback": {
+        "module": "custom_nodes.comfyui-my-nodes",
+        "display_name": "API易GPT（官方备用）"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/自动分块.json",
+    "source_sha256": "d652b0057b848756fc037d2d34d65b3fc99cf97e9071ab72f97e221327384505",
+    "sanitized": [],
+    "node_dependencies": {
+      "Image25TilePlan": {
+        "module": "custom_nodes.image25-tile",
+        "display_name": "Image 2.5 · 4K 自动分块规划"
+      }
+    },
+    "unresolved_node_types": [],
+    "model_names": [],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/自动大图生成-6000.json",
+    "source_sha256": "66ac3eadec4227a1bec6b56b027bdd5a892bb525ffdc8da829661a75d85e7acf",
+    "sanitized": [],
+    "node_dependencies": {
+      "ImageTile+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Tile"
+      },
+      "easy forLoopStart": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "For Loop Start"
+      },
+      "LayerUtility: NumberCalculator": {
+        "module": "custom_nodes.comfyui_layerstyle",
+        "display_name": "LayerUtility: Number Calculator"
+      },
+      "EmptyImage": {
+        "module": "nodes",
+        "display_name": "Empty Image"
+      },
+      "ImageScale": {
+        "module": "nodes",
+        "display_name": "Upscale Image"
+      },
+      "GetImageSize": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image Size"
+      },
+      "SaveImage": {
+        "module": "nodes",
+        "display_name": "Save Image"
+      },
+      "ImageFromBatch": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image from Batch"
+      },
+      "ImageRemoveAlpha+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Remove Alpha"
+      },
+      "ImpactMakeImageBatch": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "Make Image Batch"
+      },
+      "easy forLoopEnd": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "For Loop End"
+      },
+      "ImageFromBatch+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image From Batch"
+      },
+      "ImageUntile+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Untile"
+      },
+      "QwenImageAPI": {
+        "module": "custom_nodes.comfyui-qwen-api",
+        "display_name": "千问 Image 3.0 / Pro · 生图"
+      },
+      "PreviewImage": {
+        "module": "nodes",
+        "display_name": "Preview Image"
+      },
+      "easy imageScaleDownToSize": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "Image Scale Down To Size"
+      },
+      "ImagePadKJ": {
+        "module": "custom_nodes.comfyui-kjnodes",
+        "display_name": "ImagePad KJ"
+      },
+      "ImageCrop": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Crop Image (DEPRECATED)"
+      },
+      "Image25TilePlan": {
+        "module": "custom_nodes.image25-tile",
+        "display_name": "Image 2.5 · 4K 自动分块规划"
+      },
+      "OpenAIGPTImageNodeV2": {
+        "module": "comfy_api_nodes.nodes_openai",
+        "display_name": "OpenAI GPT Image 2.5"
+      },
+      "OpenAIChatNode": {
+        "module": "comfy_api_nodes.nodes_openai",
+        "display_name": "OpenAI ChatGPT"
+      },
+      "Text Concatenate": {
+        "module": "custom_nodes.was-node-suite-comfyui",
+        "display_name": "Text Concatenate"
+      },
+      "UNETLoader": {
+        "module": "nodes",
+        "display_name": "Load Diffusion Model"
+      },
+      "CLIPLoader": {
+        "module": "nodes",
+        "display_name": "Load CLIP"
+      },
+      "TextEncodeQwenImage21": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Text Encode Qwen Image 2.1"
+      },
+      "VAELoader": {
+        "module": "nodes",
+        "display_name": "Load VAE"
+      },
+      "KSampler": {
+        "module": "nodes",
+        "display_name": "KSampler"
+      },
+      "QwenImage21Cache": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Qwen Image 2.1 Cache"
+      },
+      "EmptyLatentImage": {
+        "module": "nodes",
+        "display_name": "Empty Latent Image"
+      },
+      "VAEDecode": {
+        "module": "nodes",
+        "display_name": "VAE Decode"
+      },
+      "PrimitiveInt": {
+        "module": "comfy_extras.nodes_primitive",
+        "display_name": "Int"
+      },
+      "ImpactCompare": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "ImpactCompare"
+      },
+      "ComfyOrNode": {
+        "module": "comfy_extras.nodes_logic",
+        "display_name": "Or"
+      }
+    },
+    "unresolved_node_types": [
+      "Switch any [Crystools]"
+    ],
+    "model_names": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image_2.1_vae_bf16.safetensors",
+      "千问\\qwen_image_2.1_bf16.safetensors"
+    ],
+    "execution_verified_this_snapshot": false
+  },
+  {
+    "path": "subgraphs/自动大图生成.json",
+    "source_sha256": "e9130613e8ae2880cdf474a9f62bebf751b57611d588c6555a7e6ef662a10e95",
+    "sanitized": [],
+    "node_dependencies": {
+      "ImageTile+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Tile"
+      },
+      "easy forLoopStart": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "For Loop Start"
+      },
+      "LayerUtility: NumberCalculator": {
+        "module": "custom_nodes.comfyui_layerstyle",
+        "display_name": "LayerUtility: Number Calculator"
+      },
+      "EmptyImage": {
+        "module": "nodes",
+        "display_name": "Empty Image"
+      },
+      "ImageScale": {
+        "module": "nodes",
+        "display_name": "Upscale Image"
+      },
+      "GetImageSize": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image Size"
+      },
+      "SaveImage": {
+        "module": "nodes",
+        "display_name": "Save Image"
+      },
+      "ImageFromBatch": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Get Image from Batch"
+      },
+      "ImageRemoveAlpha+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Remove Alpha"
+      },
+      "ImpactMakeImageBatch": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "Make Image Batch"
+      },
+      "easy forLoopEnd": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "For Loop End"
+      },
+      "ImageFromBatch+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image From Batch"
+      },
+      "ImageUntile+": {
+        "module": "custom_nodes.comfyui_essentials",
+        "display_name": "🔧 Image Untile"
+      },
+      "ImagePadKJ": {
+        "module": "custom_nodes.comfyui-kjnodes",
+        "display_name": "ImagePad KJ"
+      },
+      "ImageCrop": {
+        "module": "comfy_extras.nodes_images",
+        "display_name": "Crop Image (DEPRECATED)"
+      },
+      "Image25TilePlan": {
+        "module": "custom_nodes.image25-tile",
+        "display_name": "Image 2.5 · 4K 自动分块规划"
+      },
+      "OpenAIGPTImageNodeV2": {
+        "module": "comfy_api_nodes.nodes_openai",
+        "display_name": "OpenAI GPT Image 2.5"
+      },
+      "UNETLoader": {
+        "module": "nodes",
+        "display_name": "Load Diffusion Model"
+      },
+      "CLIPLoader": {
+        "module": "nodes",
+        "display_name": "Load CLIP"
+      },
+      "TextEncodeQwenImage21": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Text Encode Qwen Image 2.1"
+      },
+      "VAELoader": {
+        "module": "nodes",
+        "display_name": "Load VAE"
+      },
+      "KSampler": {
+        "module": "nodes",
+        "display_name": "KSampler"
+      },
+      "QwenImage21Cache": {
+        "module": "comfy_extras.nodes_qwen",
+        "display_name": "Qwen Image 2.1 Cache"
+      },
+      "EmptyLatentImage": {
+        "module": "nodes",
+        "display_name": "Empty Latent Image"
+      },
+      "VAEDecode": {
+        "module": "nodes",
+        "display_name": "VAE Decode"
+      },
+      "PrimitiveInt": {
+        "module": "comfy_extras.nodes_primitive",
+        "display_name": "Int"
+      },
+      "ImpactCompare": {
+        "module": "custom_nodes.comfyui-impact-pack",
+        "display_name": "ImpactCompare"
+      },
+      "easy imageScaleDownToSize": {
+        "module": "custom_nodes.comfyui-easy-use",
+        "display_name": "Image Scale Down To Size"
+      },
+      "ComfyOrNode": {
+        "module": "comfy_extras.nodes_logic",
+        "display_name": "Or"
+      }
+    },
+    "unresolved_node_types": [
+      "RC_PreviewImageNoMetadata",
+      "Switch any [Crystools]"
+    ],
+    "model_names": [
+      "qwen3vl_8b_int8_convrot.safetensors",
+      "qwen_image_2.1_vae_bf16.safetensors",
+      "千问\\qwen_image_2.1_bf16.safetensors"
+    ],
+    "execution_verified_this_snapshot": false
+  }
+]

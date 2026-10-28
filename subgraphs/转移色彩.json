@@ -1,0 +1,1266 @@
+{
+  "revision": 0,
+  "last_node_id": "18",
+  "last_link_id": 0,
+  "nodes": [
+    {
+      "id": 18,
+      "type": "3da52679-f371-4067-be6d-a2a0a894141e",
+      "pos": [
+        -752.7962618797305,
+        -565.7381523026019
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "调色图像",
+          "localized_name": "图像",
+          "name": "图像",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "原图像",
+          "localized_name": "图像_1",
+          "name": "image",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "输出图像",
+          "localized_name": "图像",
+          "name": "image",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "title": "转移色彩",
+      "properties": {
+        "previewExposures": []
+      }
+    }
+  ],
+  "links": [],
+  "version": 0.4,
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "3da52679-f371-4067-be6d-a2a0a894141e",
+        "version": 1,
+        "state": {
+          "lastGroupId": 0,
+          "lastNodeId": 19,
+          "lastLinkId": 45,
+          "lastRerouteId": 0
+        },
+        "revision": 0,
+        "config": {},
+        "name": "转移色彩",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -2080.8086136263946,
+            -512.5401892490036,
+            128,
+            88
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            1121.7819556795848,
+            -358.57162459996835,
+            128,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "d2bb42e4-8079-402b-9e0a-2e4ca6776e2d",
+            "name": "图像",
+            "type": "IMAGE",
+            "linkIds": [
+              1
+            ],
+            "localized_name": "图像",
+            "label": "调色图像",
+            "pos": [
+              -1976.8086136263946,
+              -488.54018924900356
+            ]
+          },
+          {
+            "id": "cbc3b410-0d90-4e50-8813-84a9eb407c38",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              40
+            ],
+            "localized_name": "图像_1",
+            "label": "原图像",
+            "pos": [
+              -1976.8086136263946,
+              -468.54018924900356
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "18792029-670f-4a93-be95-db0fe41e68d7",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              33
+            ],
+            "localized_name": "图像",
+            "label": "输出图像",
+            "pos": [
+              1145.7819556795848,
+              -334.57162459996835
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 3,
+            "type": "孤海图像缩放按像素",
+            "pos": [
+              -1136.5107061134104,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              398
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "图像",
+                "name": "图像",
+                "type": "IMAGE",
+                "link": 1
+              },
+              {
+                "localized_name": "遮罩",
+                "name": "遮罩",
+                "shape": 7,
+                "type": "MASK",
+                "link": null
+              },
+              {
+                "localized_name": "缩放方法",
+                "name": "缩放方法",
+                "type": "COMBO",
+                "widget": {
+                  "name": "缩放方法"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "宽度",
+                "name": "宽度",
+                "type": "INT",
+                "widget": {
+                  "name": "宽度"
+                },
+                "link": 3
+              },
+              {
+                "localized_name": "高度",
+                "name": "高度",
+                "type": "INT",
+                "widget": {
+                  "name": "高度"
+                },
+                "link": 4
+              },
+              {
+                "localized_name": "将边缩放到",
+                "name": "将边缩放到",
+                "type": "INT",
+                "widget": {
+                  "name": "将边缩放到"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "缩放插值",
+                "name": "缩放插值",
+                "type": "COMBO",
+                "widget": {
+                  "name": "缩放插值"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "缩放模式",
+                "name": "缩放模式",
+                "type": "COMBO",
+                "widget": {
+                  "name": "缩放模式"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "执行条件",
+                "name": "执行条件",
+                "type": "COMBO",
+                "widget": {
+                  "name": "执行条件"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "启用填充色",
+                "name": "启用填充色",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "启用填充色"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "填充颜色",
+                "name": "填充颜色",
+                "type": "GHCOLOR",
+                "widget": {
+                  "name": "填充颜色"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "自适应旋转",
+                "name": "自适应旋转",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "自适应旋转"
+                },
+                "link": null
+              },
+              {
+                "localized_name": "整除数",
+                "name": "整除数",
+                "type": "INT",
+                "widget": {
+                  "name": "整除数"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "图像",
+                "name": "图像",
+                "type": "IMAGE",
+                "links": [
+                  10
+                ]
+              },
+              {
+                "localized_name": "宽度",
+                "name": "宽度",
+                "type": "INT",
+                "links": []
+              },
+              {
+                "localized_name": "高度",
+                "name": "高度",
+                "type": "INT",
+                "links": []
+              },
+              {
+                "localized_name": "遮罩",
+                "name": "遮罩",
+                "type": "MASK",
+                "links": []
+              },
+              {
+                "localized_name": "扩展遮罩",
+                "name": "扩展遮罩",
+                "type": "MASK",
+                "links": []
+              },
+              {
+                "localized_name": "布尔",
+                "name": "布尔",
+                "type": "BOOLEAN",
+                "links": []
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "孤海图像缩放按像素"
+            },
+            "widgets_values": [
+              "自定义宽高",
+              512,
+              512,
+              1536,
+              "Lanczos",
+              "裁剪",
+              "总是",
+              false,
+              "#364254",
+              false,
+              32
+            ],
+            "widgets_values_named": {
+              "缩放方法": "自定义宽高",
+              "宽度": 512,
+              "高度": 512,
+              "将边缩放到": 1536,
+              "缩放插值": "Lanczos",
+              "缩放模式": "裁剪",
+              "执行条件": "总是",
+              "启用填充色": false,
+              "填充颜色": "#364254",
+              "自适应旋转": false,
+              "整除数": 32
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 4,
+            "type": "GetImageSize",
+            "pos": [
+              -1391.7420335707466,
+              -734.1911047975264
+            ],
+            "size": [
+              140,
+              66
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "图像",
+                "localized_name": "图像",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 41
+              }
+            ],
+            "outputs": [
+              {
+                "label": "宽度",
+                "localized_name": "宽度",
+                "name": "width",
+                "type": "INT",
+                "links": [
+                  3
+                ]
+              },
+              {
+                "label": "高度",
+                "localized_name": "高度",
+                "name": "height",
+                "type": "INT",
+                "links": [
+                  4
+                ]
+              },
+              {
+                "label": "批次数量",
+                "localized_name": "批处理大小",
+                "name": "batch_size",
+                "type": "INT",
+                "links": null
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "GetImageSize"
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 7,
+            "type": "PixelDriftFix",
+            "pos": [
+              -751.2793786560741,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              102
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "原图（对齐基准）",
+                "localized_name": "原图（对齐基准）",
+                "name": "source_image",
+                "type": "IMAGE",
+                "link": 42
+              },
+              {
+                "label": "编辑后图像",
+                "localized_name": "编辑后图像",
+                "name": "edited_image",
+                "type": "IMAGE",
+                "link": 10
+              }
+            ],
+            "outputs": [
+              {
+                "label": "对齐后图像",
+                "localized_name": "对齐后图像",
+                "name": "fixed_image",
+                "type": "IMAGE",
+                "links": [
+                  15
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "PixelDriftFix"
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 8,
+            "type": "LayerUtility: ImageBlendAdvance",
+            "pos": [
+              -366.04805119873777,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              338
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "背景图像",
+                "localized_name": "背景图像",
+                "name": "background_image",
+                "type": "IMAGE",
+                "link": 44
+              },
+              {
+                "label": "图像层",
+                "localized_name": "图层图像",
+                "name": "layer_image",
+                "type": "IMAGE",
+                "link": 21
+              },
+              {
+                "label": "遮罩层",
+                "localized_name": "图层遮罩",
+                "name": "layer_mask",
+                "shape": 7,
+                "type": "MASK",
+                "link": null
+              },
+              {
+                "label": "反转遮罩",
+                "localized_name": "反转遮罩",
+                "name": "invert_mask",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "invert_mask"
+                },
+                "link": null
+              },
+              {
+                "label": "混合模式",
+                "localized_name": "混合模式",
+                "name": "blend_mode",
+                "type": "COMBO",
+                "widget": {
+                  "name": "blend_mode"
+                },
+                "link": null
+              },
+              {
+                "label": "不透明",
+                "localized_name": "不透明度",
+                "name": "opacity",
+                "type": "INT",
+                "widget": {
+                  "name": "opacity"
+                },
+                "link": null
+              },
+              {
+                "label": "X百分比",
+                "localized_name": "X轴百分比",
+                "name": "x_percent",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "x_percent"
+                },
+                "link": null
+              },
+              {
+                "label": "Y百分比",
+                "localized_name": "Y轴百分比",
+                "name": "y_percent",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "y_percent"
+                },
+                "link": null
+              },
+              {
+                "label": "镜像",
+                "localized_name": "镜像",
+                "name": "mirror",
+                "type": "COMBO",
+                "widget": {
+                  "name": "mirror"
+                },
+                "link": null
+              },
+              {
+                "label": "缩放",
+                "localized_name": "缩放",
+                "name": "scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "scale"
+                },
+                "link": null
+              },
+              {
+                "label": "宽高比",
+                "localized_name": "宽高比",
+                "name": "aspect_ratio",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "aspect_ratio"
+                },
+                "link": null
+              },
+              {
+                "label": "旋转",
+                "localized_name": "旋转",
+                "name": "rotate",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "rotate"
+                },
+                "link": null
+              },
+              {
+                "label": "采样方法",
+                "localized_name": "变换方法",
+                "name": "transform_method",
+                "type": "COMBO",
+                "widget": {
+                  "name": "transform_method"
+                },
+                "link": null
+              },
+              {
+                "label": "抗锯齿",
+                "localized_name": "抗锯齿",
+                "name": "anti_aliasing",
+                "type": "INT",
+                "widget": {
+                  "name": "anti_aliasing"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "图像",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  26
+                ]
+              },
+              {
+                "label": "遮罩",
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": []
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "LayerUtility: ImageBlendAdvance"
+            },
+            "widgets_values": [
+              false,
+              "soft_light",
+              35,
+              50,
+              50,
+              "None",
+              1,
+              1,
+              0,
+              "lanczos",
+              0
+            ],
+            "widgets_values_named": {
+              "invert_mask": false,
+              "blend_mode": "soft_light",
+              "opacity": 35,
+              "x_percent": 50,
+              "y_percent": 50,
+              "mirror": "None",
+              "scale": 1,
+              "aspect_ratio": 1,
+              "rotate": 0,
+              "transform_method": "lanczos",
+              "anti_aliasing": 0
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 9,
+            "type": "easy imageDetailTransfer",
+            "pos": [
+              19.18327625859854,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              194
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "目标图像",
+                "localized_name": "目标图像",
+                "name": "target",
+                "type": "IMAGE",
+                "link": 15
+              },
+              {
+                "label": "源图像",
+                "localized_name": "源图像",
+                "name": "source",
+                "type": "IMAGE",
+                "link": 43
+              },
+              {
+                "label": "遮罩",
+                "localized_name": "遮罩",
+                "name": "mask",
+                "shape": 7,
+                "type": "MASK",
+                "link": null
+              },
+              {
+                "label": "模式",
+                "localized_name": "模式",
+                "name": "mode",
+                "type": "COMBO",
+                "widget": {
+                  "name": "mode"
+                },
+                "link": null
+              },
+              {
+                "label": "模糊强度",
+                "localized_name": "模糊",
+                "name": "blur_sigma",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "blur_sigma"
+                },
+                "link": null
+              },
+              {
+                "label": "混合因子",
+                "localized_name": "混合",
+                "name": "blend_factor",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "blend_factor"
+                },
+                "link": null
+              },
+              {
+                "label": "图像输出",
+                "localized_name": "图像输出",
+                "name": "image_output",
+                "type": "COMBO",
+                "widget": {
+                  "name": "image_output"
+                },
+                "link": null
+              },
+              {
+                "label": "文件名前缀",
+                "localized_name": "save_prefix",
+                "name": "save_prefix",
+                "type": "STRING",
+                "widget": {
+                  "name": "save_prefix"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "图像",
+                "localized_name": "图像",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  21,
+                  27
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "easy imageDetailTransfer"
+            },
+            "widgets_values": [
+              "add",
+              1,
+              1,
+              "Preview",
+              "ComfyUI"
+            ],
+            "widgets_values_named": {
+              "mode": "add",
+              "blur_sigma": 1,
+              "blend_factor": 1,
+              "image_output": "Preview",
+              "save_prefix": "ComfyUI"
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 13,
+            "type": "LayerUtility: ImageBlendAdvance",
+            "pos": [
+              404.41460371593485,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              338
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "背景图像",
+                "localized_name": "背景图像",
+                "name": "background_image",
+                "type": "IMAGE",
+                "link": 26
+              },
+              {
+                "label": "图像层",
+                "localized_name": "图层图像",
+                "name": "layer_image",
+                "type": "IMAGE",
+                "link": 27
+              },
+              {
+                "label": "遮罩层",
+                "localized_name": "图层遮罩",
+                "name": "layer_mask",
+                "shape": 7,
+                "type": "MASK",
+                "link": null
+              },
+              {
+                "label": "反转遮罩",
+                "localized_name": "反转遮罩",
+                "name": "invert_mask",
+                "type": "BOOLEAN",
+                "widget": {
+                  "name": "invert_mask"
+                },
+                "link": null
+              },
+              {
+                "label": "混合模式",
+                "localized_name": "混合模式",
+                "name": "blend_mode",
+                "type": "COMBO",
+                "widget": {
+                  "name": "blend_mode"
+                },
+                "link": null
+              },
+              {
+                "label": "不透明",
+                "localized_name": "不透明度",
+                "name": "opacity",
+                "type": "INT",
+                "widget": {
+                  "name": "opacity"
+                },
+                "link": null
+              },
+              {
+                "label": "X百分比",
+                "localized_name": "X轴百分比",
+                "name": "x_percent",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "x_percent"
+                },
+                "link": null
+              },
+              {
+                "label": "Y百分比",
+                "localized_name": "Y轴百分比",
+                "name": "y_percent",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "y_percent"
+                },
+                "link": null
+              },
+              {
+                "label": "镜像",
+                "localized_name": "镜像",
+                "name": "mirror",
+                "type": "COMBO",
+                "widget": {
+                  "name": "mirror"
+                },
+                "link": null
+              },
+              {
+                "label": "缩放",
+                "localized_name": "缩放",
+                "name": "scale",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "scale"
+                },
+                "link": null
+              },
+              {
+                "label": "宽高比",
+                "localized_name": "宽高比",
+                "name": "aspect_ratio",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "aspect_ratio"
+                },
+                "link": null
+              },
+              {
+                "label": "旋转",
+                "localized_name": "旋转",
+                "name": "rotate",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "rotate"
+                },
+                "link": null
+              },
+              {
+                "label": "采样方法",
+                "localized_name": "变换方法",
+                "name": "transform_method",
+                "type": "COMBO",
+                "widget": {
+                  "name": "transform_method"
+                },
+                "link": null
+              },
+              {
+                "label": "抗锯齿",
+                "localized_name": "抗锯齿",
+                "name": "anti_aliasing",
+                "type": "INT",
+                "widget": {
+                  "name": "anti_aliasing"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "图像",
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  31
+                ]
+              },
+              {
+                "label": "遮罩",
+                "localized_name": "mask",
+                "name": "mask",
+                "type": "MASK",
+                "links": []
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "LayerUtility: ImageBlendAdvance"
+            },
+            "widgets_values": [
+              false,
+              "screen",
+              45,
+              50,
+              50,
+              "None",
+              1,
+              1,
+              0,
+              "lanczos",
+              0
+            ],
+            "widgets_values_named": {
+              "invert_mask": false,
+              "blend_mode": "screen",
+              "opacity": 45,
+              "x_percent": 50,
+              "y_percent": 50,
+              "mirror": "None",
+              "scale": 1,
+              "aspect_ratio": 1,
+              "rotate": 0,
+              "transform_method": "lanczos",
+              "anti_aliasing": 0
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 15,
+            "type": "easy imageDetailTransfer",
+            "pos": [
+              789.6459311732712,
+              -734.1911047975264
+            ],
+            "size": [
+              270,
+              194
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "目标图像",
+                "localized_name": "目标图像",
+                "name": "target",
+                "type": "IMAGE",
+                "link": 31
+              },
+              {
+                "label": "源图像",
+                "localized_name": "源图像",
+                "name": "source",
+                "type": "IMAGE",
+                "link": 45
+              },
+              {
+                "label": "遮罩",
+                "localized_name": "遮罩",
+                "name": "mask",
+                "shape": 7,
+                "type": "MASK",
+                "link": null
+              },
+              {
+                "label": "模式",
+                "localized_name": "模式",
+                "name": "mode",
+                "type": "COMBO",
+                "widget": {
+                  "name": "mode"
+                },
+                "link": null
+              },
+              {
+                "label": "模糊强度",
+                "localized_name": "模糊",
+                "name": "blur_sigma",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "blur_sigma"
+                },
+                "link": null
+              },
+              {
+                "label": "混合因子",
+                "localized_name": "混合",
+                "name": "blend_factor",
+                "type": "FLOAT",
+                "widget": {
+                  "name": "blend_factor"
+                },
+                "link": null
+              },
+              {
+                "label": "图像输出",
+                "localized_name": "图像输出",
+                "name": "image_output",
+                "type": "COMBO",
+                "widget": {
+                  "name": "image_output"
+                },
+                "link": null
+              },
+              {
+                "label": "文件名前缀",
+                "localized_name": "save_prefix",
+                "name": "save_prefix",
+                "type": "STRING",
+                "widget": {
+                  "name": "save_prefix"
+                },
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "label": "图像",
+                "localized_name": "图像",
+                "name": "image",
+                "type": "IMAGE",
+                "links": [
+                  33
+                ]
+              }
+            ],
+            "properties": {
+              "Node name for S&R": "easy imageDetailTransfer"
+            },
+            "widgets_values": [
+              "add",
+              1,
+              1,
+              "Preview",
+              "ComfyUI"
+            ],
+            "widgets_values_named": {
+              "mode": "add",
+              "blur_sigma": 1,
+              "blend_factor": 1,
+              "image_output": "Preview",
+              "save_prefix": "ComfyUI"
+            },
+            "color": "#07180f",
+            "bgcolor": "#07180f"
+          },
+          {
+            "id": 19,
+            "type": "Reroute",
+            "pos": [
+              -1577.3446427665656,
+              -439.24626789401236
+            ],
+            "size": [
+              76,
+              26
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "label": "转接点",
+                "name": "",
+                "type": "*",
+                "link": 40
+              }
+            ],
+            "outputs": [
+              {
+                "name": "",
+                "type": "*",
+                "links": [
+                  41,
+                  42,
+                  43,
+                  44,
+                  45
+                ]
+              }
+            ],
+            "properties": {
+              "showOutputText": false,
+              "horizontal": false
+            },
+            "color": "#178947",
+            "bgcolor": "#07180f"
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 3,
+            "origin_id": 4,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 3,
+            "type": "INT"
+          },
+          {
+            "id": 4,
+            "origin_id": 4,
+            "origin_slot": 1,
+            "target_id": 3,
+            "target_slot": 4,
+            "type": "INT"
+          },
+          {
+            "id": 21,
+            "origin_id": 9,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 15,
+            "origin_id": 7,
+            "origin_slot": 0,
+            "target_id": 9,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 26,
+            "origin_id": 8,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 27,
+            "origin_id": 9,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 31,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 15,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 1,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 3,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 33,
+            "origin_id": 15,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 10,
+            "origin_id": 3,
+            "origin_slot": 0,
+            "target_id": 7,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 40,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 19,
+            "target_slot": 0,
+            "type": "*"
+          },
+          {
+            "id": 41,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 4,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 42,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 7,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 43,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 9,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 44,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 8,
+            "target_slot": 0,
+            "type": "IMAGE"
+          },
+          {
+            "id": 45,
+            "origin_id": 19,
+            "origin_slot": 0,
+            "target_id": 15,
+            "target_slot": 1,
+            "type": "IMAGE"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "extra": {}
+}

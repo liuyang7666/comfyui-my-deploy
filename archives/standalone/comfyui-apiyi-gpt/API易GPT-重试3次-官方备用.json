@@ -1,0 +1,81 @@
+{
+  "id": "f1c36a3d-d615-4aba-b528-fa72f12713f2",
+  "revision": 0,
+  "last_node_id": 1,
+  "last_link_id": 0,
+  "version": 0.4,
+  "links": [],
+  "groups": [],
+  "nodes": [
+    {
+      "id": 1,
+      "type": "APIYiGPTFallback",
+      "pos": [
+        180,
+        180
+      ],
+      "size": [
+        460,
+        580
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model.images.图像_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "图像",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "APIYiGPTFallback"
+      },
+      "widgets_values": [
+        "一只青绿色陶瓷马克杯，米白背景，柔和窗光，产品摄影，无文字。",
+        "gpt-image-2.5-vip",
+        "1280x1280",
+        "自动",
+        "高",
+        1,
+        0,
+        "randomize",
+        1024,
+        1024
+      ],
+      "widgets_values_named": {
+        "prompt": "一只青绿色陶瓷马克杯，米白背景，柔和窗光，产品摄影，无文字。",
+        "model": "gpt-image-2.5-vip",
+        "model.size": "1280x1280",
+        "model.background": "自动",
+        "model.quality": "高",
+        "n": 1,
+        "seed": 0,
+        "control_after_generate": "randomize",
+        "custom_width": 1024,
+        "custom_height": 1024
+      },
+      "color": "#432",
+      "bgcolor": "#653",
+      "title": "API易GPT · VIP重试3次→非VIP1次→官方备用"
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  }
+}

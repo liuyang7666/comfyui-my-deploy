@@ -1,0 +1,9 @@
+{
+  "ResolutionSelect": {
+    "display_name": "分辨率选择",
+    "inputs": {
+      "image": {"name": "图像"},
+      "resolution": {"name": "分辨率"}
+    }
+  }
+}

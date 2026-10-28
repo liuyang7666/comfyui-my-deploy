@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-28",
+  "source": "当前自动修图实例的磁盘源码和已保存工作流",
+  "visibility": "public",
+  "local_nodes": [
+    {
+      "directory": "comfyui-my-nodes",
+      "description": "MY 整合节点（另含皮肤瑕疵模块快照）",
+      "snapshot_only": true
+    },
+    {
+      "directory": "comfyui-aligned-resize",
+      "description": "长边缩放、16/32 对齐和坐标还原",
+      "snapshot_only": true
+    },
+    {
+      "directory": "comfyui-concurrent-images",
+      "description": "分块并发提交和按序取回",
+      "snapshot_only": true
+    },
+    {
+      "directory": "comfyui-resolution-select",
+      "description": "分辨率选择",
+      "snapshot_only": true
+    },
+    {
+      "directory": "comfyui-darkroom-reference-match",
+      "description": "参考图颜色范围匹配 v0.5.0（实验）",
+      "snapshot_only": true
+    },
+    {
+      "directory": "ComfyUI-zveroboy-photo",
+      "description": "本地照片/文件夹加载、EXIF 和保存",
+      "snapshot_only": true
+    },
+    {
+      "directory": "ComfyUI_PadToMultiple_CN",
+      "description": "中文图像补边",
+      "snapshot_only": true
+    },
+    {
+      "directory": "comfyui-apiyi-gpt",
+      "description": "并发模块所需的旧路径配置兼容入口；不注册节点",
+      "snapshot_only": false
+    }
+  ],
+  "workflows_count": 17,
+  "credentials_included": false,
+  "model_weights_included": false,
+  "unsaved_browser_workflows_included": false,
+  "runtime_source_modified": false,
+  "packaging_adaptations": [
+    "旧 API易目录只保留配置读取入口，节点统一由 MY 注册",
+    "README 去除本机历史任务/相机样本行",
+    "工作流清空密钥字段、替换绝对路径、移除嵌入媒体"
+  ]
+}

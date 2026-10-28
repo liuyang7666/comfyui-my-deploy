@@ -1,0 +1,13 @@
+{
+  "base_url": "https://api.apiyi.com/v1",
+  "default_model": "gpt-image-2.5-vip",
+  "models": [
+    "gpt-image-2.5-vip",
+    "gpt-image-2.5-flare-vip",
+    "gpt-image-2.5-sunburst-vip",
+    "gpt-image-2-vip"
+  ],
+  "timeout": 900,
+  "response_format": "b64_json",
+  "saturation_retries": 2
+}
