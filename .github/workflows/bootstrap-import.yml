@@ -1,0 +1,37 @@
+name: 展开部署快照
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/bootstrap-import.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 校验并展开已上传的部署包
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, zipfile
+          root = Path.cwd().resolve()
+          archive = root / 'snapshot-upload.zip'
+          expected = '81094a9e597421c2ac32d0b250b8f9feef0cd49f79b854f465e1024e31678e77'
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected, 'Archive SHA256 mismatch'
+          with zipfile.ZipFile(archive) as z:
+              for entry in z.infolist():
+                  path = (root / entry.filename).resolve()
+                  path.relative_to(root)
+                  assert '.git' not in Path(entry.filename).parts
+              z.extractall(root)
+          PY
+          mv .github/workflows/bootstrap-import.yml "$RUNNER_TEMP/bootstrap-import.yml"
+          git rm -- snapshot-upload.zip
+          python scripts/validate.py
+          mv "$RUNNER_TEMP/bootstrap-import.yml" .github/workflows/bootstrap-import.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m '整理节点源码、工作流与中文部署文档'
+          git push origin HEAD:main
